@@ -1,0 +1,798 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300&display=swap');
+/*font-family: 'Lato', sans-serif;*/
+
+/*selector universal*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    /*Con esto las tipografías del documento medirán 10px, de esta
+    forma es más fácil usar los rem. Rem se adapat mejor a los dispositivos*/
+    font-size: 62.5%;
+    font-family: 'Lato', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*header*/
+
+/*logo*/
+header img{
+    width: 250px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+/*main*/
+.dropdown-menu {
+    border: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 10px 10px;
+  }
+  
+  .dropdown-item {
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #e6f7ff;
+  }
+  
+  .dropdown-toggle::after {
+    display: inline-block;
+    margin-left: 5px;
+    vertical-align: middle;
+    content: "";
+    border-top: 5px solid;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+  }
+
+.navPropio{
+    width: 100%;
+    align-items: center;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link{
+    padding-left: 2.6rem;
+}
+
+.menu{
+    justify-content: flex-end;
+}
+
+.menu li a{
+    font-weight: 400;
+    color: black;
+    font-size: 2rem;
+
+}
+
+.menu li a:hover{
+    color: #E5007E;
+}
+
+.menuDesplegable li a{
+    font-weight: 400;
+    color: black;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.menuDesplegable li a:active{
+    background-color: #E5007E;
+    color: #fff;
+}
+
+/*Banner index*/
+.carousel-control-prev-icon{
+    background-image: url(recursos/icono-left.png);
+    height: 30px;
+    width: 30px;
+    opacity: 0.5;
+}
+
+.carousel-control-next-icon{
+    background-image: url(recursos/icono-right.png);
+    height: 30px;
+    width: 30px;
+    opacity: 0.5;
+}
+
+.carousel-control-prev-icon:hover{
+    background-image: url(recursos/icono-left.png);
+    height: 30px;
+    width: 30px;
+    opacity: 1;
+}
+
+.carousel-control-next-icon:hover{
+    background-image: url(recursos/icono-right.png);
+    height: 30px;
+    width: 30px;
+    opacity: 1;
+}
+
+.carousel-indicators [data-bs-target] {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+.carousel-caption{
+    display: flex;
+    align-content: start;
+}
+
+.bannerIndex{
+    height: 750px;
+}
+
+.bannerCarrusel h1, .bannerCarrusel h2{
+    text-transform: uppercase;
+    font-size: 4rem;
+    line-height: 40px;
+    color: #fff;
+    text-shadow: 2px 1px 5px rgb(58, 58, 58);
+}
+
+.textoResaltado{
+    font-weight: 400;
+    font-size: 2.8rem;
+    color: #fff;
+    text-shadow: 2px 1px 5px rgb(58, 58, 58);
+}
+
+.botonCotizar{
+    background-color: #009EE2;
+    border: 2px solid transparent;
+    color: #fff;
+    padding: 15px 32px;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    z-index: 2;
+}
+
+.botonCotizar:hover{
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+/*conócenos----------------------------------------*/
+.anclaInvisible{
+    position: absolute;
+    top: 630px;
+    visibility: hidden;
+}
+
+/* .divConocenos{
+    display: grid;
+    grid-template-columns: 45% 55%;
+    grid-template-rows: 80px 300px 80px;
+    justify-content: center;
+    margin-top: 20px;
+} */
+
+/* .divConocenos h2{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    text-transform: uppercase;
+    font-size: 3rem;
+    align-self: center;
+    color: black;
+} */
+
+/* .divConocenos p{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    align-self: start;
+    justify-self: start;
+}
+
+.divConocenos button{
+    grid-column: 1/2;
+    grid-row: 3/4;
+    align-self: center;
+}
+
+.imgConocenos{
+    grid-column: 2/3;
+    grid-row: 1/4;
+    justify-self: end;
+    align-self: start;
+} */
+
+.divConocenos img{
+    width: 80%;
+}
+
+
+/* .divConocenos a{
+    margin: 0;
+    padding: 0;
+    align-self: end;
+} */
+
+.botonCotizar2{
+    background-color: #009EE2;
+    border: 2px solid transparent;
+    color: #fff;
+    padding: 15px 32px;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.botonCotizar2:hover{
+    background-color: transparent;
+    border: 2px solid #E5007E;
+    color: #E5007E;
+}
+
+.sectionConocenos p{
+    font-size: 1.7rem;
+    white-space: pre-wrap;
+}
+
+/*portafolio--------------------------------------------*/
+div {
+    display: block;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+section {
+    display: block;
+    position: relative;
+    box-sizing: border-box
+}
+
+.float_left {
+    float: left
+}
+
+.float_right {
+    float: right
+}
+
+.bbb_background {
+    background-color: #f0f9fd;
+}
+
+.trans_200 {
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease
+}
+
+.trans_300 {
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    transition: all 300ms ease
+}
+
+.trans_400 {
+    -webkit-transition: all 400ms ease;
+    -moz-transition: all 400ms ease;
+    -ms-transition: all 400ms ease;
+    -o-transition: all 400ms ease;
+    transition: all 400ms ease
+}
+
+.trans_500 {
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease
+}
+
+.trends {
+    padding-top: 80px;
+    padding-bottom: 80px
+}
+
+.bbb_background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.bbb_container {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    padding-right: 40px;
+}
+
+.bbb_slider_nav{
+    display: flex;
+    flex-direction: row;
+}
+
+.bbb_nav {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 16px;
+    border: none;
+    background-color: transparent;
+}
+
+.bbb_nav img{
+    width: 36px !important;
+    height: 36px !important;
+}
+
+/* 
+.bbb_slider_nav button:hover{
+    background-color: transparent;
+    border: #E5007E solid 3px;
+    color: #E5007E;
+}
+
+/* 
+.bbb_nav img{
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    width: 16px;
+    height: 16px;
+} */
+
+.bbb_item {
+    background: #FFFFFF;
+    padding: 2px;
+}
+
+.bbb_image img{
+    width: 30px;
+    height: 100%;
+}
+
+.bbb_content {
+    margin-top: 24px;
+}
+
+.trends{
+    margin-top: 50px;
+}
+
+.trends h2{
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin-bottom: 5px;
+}
+
+.trends p{
+    font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 991px) {
+    .bbb_slider_container {
+        margin-top: 15px
+    }
+}
+
+/* .seccionPortafolio h2{
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.carruselPortafolio{
+    margin-bottom: 20px;
+} */
+
+/*footer-----------------------------------------------*/
+
+/*icono whatsapp-----------------------------------------------*/
+.iconoFlotante img{
+    width: 70px;
+    position: fixed;
+    top: 620px;
+    z-index: 1;
+    right: 15px;
+}
+
+/*información del footer----------------------------------------*/
+.footerContainer{
+    background-color: #009EE2;
+    display: grid;
+    grid-template-columns: repeat(4, 21.25%);
+    grid-template-rows: repeat(2, 90px);
+    justify-content: center;
+    align-content: center;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+.footerContainer .menuFooter{
+    grid-column: 1/2;
+    grid-row: 1/span 3;
+    align-self: center;
+}
+
+.menuFooter ol, ul {
+  padding-left: 1rem;
+}
+
+.footerContainer .footerInstg{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    align-self: end;
+    justify-self: end;
+}
+
+.footerContainer .footerFace{
+    grid-column: 3/4;
+    grid-row: 1/2;
+    align-self: end;
+    justify-self: start;
+}
+
+.footerContainer .footerUbic{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    align-self: start;
+    justify-self: end;
+}
+
+.footerContainer .footerCopy{
+    grid-column: 3/4;
+    grid-row: 2/3;
+    align-self: start;
+    justify-self: start;
+}
+
+.contenedorRedesCopy{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33%;
+}
+
+.footerContainer img{
+    width: 40px;
+}
+
+.footerContainer ul{
+    list-style: none;
+}
+
+.footerContainer a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.menuFooter a:hover{
+    color: black;
+}
+
+.footerContainer p{
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+/*servicios----------------------------------------------*/
+.sectServicios{
+    display: grid;
+    grid-template-columns: repeat(4, 4fr);
+    grid-template-rows: repeat(4, 350px);
+    margin-top: 120px;
+}
+
+.sectServicios h2{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.sectServicios p{
+    font-size: 1.7rem;
+    color: #fff;
+}
+
+.iconoVerMas{
+    width: 16px;
+    color:#fff;
+}
+
+.textVasosP{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    align-self: center;
+    margin-left: 50px;
+}
+
+.imgVasosP{
+    grid-column: 1/span 3;
+    grid-row: 1/span 3;
+    background-image: url(recursos/servicios-vasos-plasticos.jpg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image 0.3s ease;
+}
+
+.imgVasosP:hover{
+    background-image: url(recursos/servicios-vasos-plasticos-hover.jpg);
+    cursor: pointer;
+}
+
+.textEnvasesP{
+    grid-column: 3/4;
+    grid-row: 2/3;
+    align-self: center;
+    margin-left: 50px;
+}
+
+.imgEnvasesP{
+    grid-column: 3/span 5;
+    grid-row: 1/span 3;
+    background-image: url(recursos/servicios-envases.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.imgEnvasesP:hover{
+    background-image: url(recursos/servicios-envases-hover.jpg);
+    cursor: pointer;
+}
+
+.textVasosC{
+    grid-column: 1/2;
+    grid-row: 4/5;
+    align-self: center;
+    margin-left: 50px;
+}
+
+.imgVasosC{
+    grid-column: 1/span 3;
+    grid-row: 3/span 5;
+    background-image: url(recursos/servicios-vasos-carton.jpg);
+    background-size: 150%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.imgVasosC:hover{
+    background-image: url(recursos/servicios-vasos-carton-hover.jpg);
+    cursor: pointer;
+}
+
+.textBolsas{
+    grid-column: 3/4;
+    grid-row: 4/5;
+    align-self: center;
+    margin-left: 50px;
+}
+
+.imgBolsas{
+    grid-column: 3/span 5;
+    grid-row: 3/span 5;
+    background-image: url(recursos/servicios-bolsas-tnt.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.imgBolsas:hover{
+    background-image: url(recursos/servicios-bolsas-tnt-hover.jpg);
+    cursor: pointer;
+}
+
+/*cotizar*/
+.sectCotizar{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: 320px 280px;
+    justify-content: center;
+    row-gap: 20px;
+}
+
+.sectCotizar h2{
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.sectCotizar p{
+    font-size: 1.7rem;
+}
+
+.sectCotizar button{
+    margin-top: 20px;
+}
+
+.imgCotizar1{
+    grid-column: 1/span 3;
+    grid-row: 1/2;
+    background-image: url(recursos/banner-cotizar.jpg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.cotizarCatalogo{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    width: 80%;
+    align-self: start;
+    justify-self: center;
+}
+
+.cotizarPersonalizado{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    width: 80%;
+    align-self: start;
+    justify-self: center;
+}
+
+/*cotizar catálogo-----------------------------------------*/
+.sectCotizarCatalogo{
+    margin-top: 120px;
+}
+/* .sectCotizarCatalogo{
+    display: grid;
+    grid-template-columns: repeat(4, 22.5%);
+    grid-template-rows: repeat(3, 600px);
+    justify-content: center;
+    margin-top: 120px;
+}
+
+.imgCotizarCatalogo{
+    grid-column: 1/span 3;
+    grid-row: 1/2;
+}
+
+.divCotizarCatalogo1{
+    grid-column: 3/span 5;
+    grid-row: 1/2;
+    align-self: center;
+}
+
+.divCotizarCatalogo2{
+    grid-column: 1/span 5;
+    grid-row: 2/3;
+} */
+
+.imgCotizarCatalogo img{
+    width: 50%;
+}
+
+.sectCotizarCatalogo h2{
+    text-transform: uppercase;
+    font-size: 2.5rem;
+}
+
+.sectCotizarCatalogo p{
+    font-size: 2rem;
+    margin-top: 30px;
+}
+
+.materialCatalogo{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.form-check-input:checked {
+    background-color: #E5007E;
+    border-color: #E5007E;
+    box-shadow: none;
+}
+
+.form-check-input:active {
+    background-color: #ffbde1;
+    border-color: #ffbde1;
+    box-shadow: none;
+}
+
+.form-check-inline {
+    margin-right: 3rem;
+}
+
+.form-select{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+/* .form-select:focus {
+    border-color: #198754;
+    box-shadow: 0 0 0 0.25rem rgb(25 135 84 / 25%);
+} */
+
+.tamañoCatalogo{
+    width: 320px;
+}
+
+.form-label{
+    font-size: 2rem;
+    margin-top: 30px;
+}
+
+.form-text{
+    font-size: 1.4rem;
+}
+
+/*cotizar personalizado*/
+.sectCotizarPersonalizado{
+    display: grid;
+    grid-template-columns: 15% repeat(2, 35%) 15%;
+    grid-template-rows: 150px 500px 150px 50px;
+}
+
+.bannerCotizarPersonalizado{
+    grid-column: 1/span 4;
+    grid-row: 1/span 5;
+    background-image: url(recursos/banner-cotizar-personalizado.jpg);
+    background-size: cover;
+}
+
+.fondoDescripcion{
+    grid-column: 2/4;
+    grid-row: 2/3;
+    background-color: #fff;
+    opacity: 50%;
+}
+
+.divDescripcion{
+    grid-column: 2/4;
+    grid-row: 2/3;
+    width: 40%;
+    z-index: 1;
+}
+
+.formularioPersonalizado{
+    grid-column: 3/4;
+    grid-row: 2/span 2;
+    background-color: #009EE2;
+    z-index: 1;
+    color: #fff;
+}
+
+.formularioPersonalizado h2{
+    font-size: 3rem;
+    text-transform: uppercase;
+}

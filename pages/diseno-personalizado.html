@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--bs va antes de los estilos css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <!--Normalize-->
+    <link rel="stylesheet" href="../normalize.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../style.css">
+    <title>Conócenos</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top shadow p-3 mb-5 bg-body rounded navPropio">
+            <div class="container menuContenedor">
+                <a class="navbar-brand" href="../index.html"><img src="../recursos/logo-colorfull-horizontal.jpg"
+                        alt="Logo ColorFull"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse menu" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html#anclaInvisible">Conócenos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="cotiza.html" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Cotizar
+                            </a>
+                            <ul class="dropdown-menu menuDesplegable">
+                                <li><a class="dropdown-item" href="diseno-catalogo.html">Diseño Catálogo</a></li>
+                                <li><a class="dropdown-item" href="diseno-personalizado.html">Diseño Personalizado</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contactanos.html">Contáctanos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="sectCotizarPersonalizado">
+            <div class="bannerCotizarPersonalizado"></div>
+            <div class="fondoDescripcion"></div>
+            <div class="divDescripcion">
+                <h2>Cuéntanos más acerca de tu proyecto</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam harum voluptate aliquid enim est omnis iure inventore, voluptates minus accusamus assumenda mollitia repudiandae perspiciatis minima blanditiis asperiores, voluptatem fugit rerum maxime! Excepturi enim sapiente temporibus quia facere dolorem cum dolor aut id praesentium. Enim minima inventore aperiam aut perspiciatis consectetur?</p>
+            </div>
+            <form action="" class="formularioPersonalizado">
+                <h2>Tu pedido</h2>
+                <p>Elige el material</p>
+                <div class="materialPersonalizado">
+                  <input type="radio" name="opciones" id="plastico" value="plastico">
+                  <label for="plastico">Plástico</label>
+
+                  <input type="radio" name="opciones" id="carton" value="carton">
+                  <label for="carton">Cartón</label>
+
+                  <input type="radio" name="opciones" id="bolsas" value="bolsas">
+                  <label for="bolsas">Bolsas TNT</label>
+                </div>
+
+                <p>Ingresa el tamaño</p>
+                <input type="text" id="tamañoPersonalizado" class="tamañoPersonalizado" placeholder="Medida en centímetros" required>
+                <label for="tamañoPersonalizado">cm</label>
+
+                <p>¿Qué cantidad?</p>
+                <input type="number" id="cantidadPersonalizado" class="cantidadPersonalizado" placeholder="100" required
+                min="2" max="8" step="10">
+                <label for="cantidadPersonalizado">Unidades</label>
+
+                <p>¿Cuántos colores?</p>
+                <input type="range" name="coloresPersonalizado" id="coloresPersonalizado" step="1" min="1" max="3" list="cantidadColoresP">
+                <datalist type="range" id="cantidadColoresP">
+                    <option value="1" label="1">
+                    <option value="2" label="2">
+                    <option value="3" label="3">
+                </datalist>
+
+                <p>Tus datos de contacto</p>
+                <input type="text" name="nombre" id="nombre" class="nombre" placeholder="María Pérez" required>
+                <label for="nombre">Nombre y Apellido</label>
+
+                <input type="email" name="email" id="email" class="email" placeholder="ejemplo@mail.com" required>
+                <label for="email">Correo electrónico</label>
+
+                <input type="text" name="celular" id="celular" class="celular" placeholder="56900000000" minlength="11" maxlength="11" required size="14"> 
+                <label for="celular">Celular</label>
+
+                <textarea name="comentario" id="comentario" cols="30" rows="10" maxlength="200" placeholder="Escribe algunas especificaciones necesarias"></textarea>
+
+                <button class="enviarFormulario">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <!-- redes sociales, copyright -->
+        <div class="iconoFlotante">
+            <img src="../recursos/icono-whatsapp.png" alt="ícono Whatsapp">
+        </div>
+        <section class="footerContainer">
+                <div class="menuFooter">
+                    <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="../index.html">Conócenos</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="cotiza.html">Cotiza</a></li>
+                        <li><a href="contactanos.html">Contáctanos</a></li>
+                    </ul>
+                </div>
+
+                <img class="footerInstg" src="../recursos/icono-instagram.png" alt="Ícono Instagram">
+                <img class="footerFace" src="../recursos/icono-facebook.png" alt="Ícono Facebook">
+                
+                <p class="footerUbic">Región Metropolitana, Chile</p>
+                <p class="footerCopy">COPYRIGHT © | CHÍA NAVA</p>
+        </section>
+    </footer>
+    <!--bs script de js-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
