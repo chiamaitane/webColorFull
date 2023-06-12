@@ -16,7 +16,8 @@ $(document).ready(function()
                 responsive:
                 {
                     0:{items:1},
-                    575:{items:2},
+                    576:{items:1},
+                    992:{items:2},
                 }
             });
 
