@@ -461,7 +461,7 @@ section {
 
 .sectServicios{
     display: grid;
-    grid-template-columns: repeat(4, 4fr);
+    grid-template-columns: 40% 10% 40% 10%;
     grid-template-rows: repeat(4, 350px);
     margin-top: 120px;
 }
@@ -499,10 +499,10 @@ section {
     transition: background-image 0.3s ease;
 }
 
-.imgVasosP:hover{
+/* .imgVasosP:hover{
     background-image: url(recursos/servicios-vasos-plasticos-hover.jpg);
     cursor: pointer;
-}
+} */
 
 .textEnvasesP{
     grid-column: 3/4;
@@ -520,10 +520,10 @@ section {
     background-repeat: no-repeat;
 }
 
-.imgEnvasesP:hover{
+/* .imgEnvasesP:hover{
     background-image: url(recursos/servicios-envases-hover.jpg);
     cursor: pointer;
-}
+} */
 
 .textVasosC{
     grid-column: 1/2;
@@ -541,10 +541,10 @@ section {
     background-repeat: no-repeat;
 }
 
-.imgVasosC:hover{
+/* .imgVasosC:hover{
     background-image: url(recursos/servicios-vasos-carton-hover.jpg);
     cursor: pointer;
-}
+} */
 
 .textBolsas{
     grid-column: 3/4;
@@ -562,10 +562,11 @@ section {
     background-repeat: no-repeat;
 }
 
-.imgBolsas:hover{
+/* .imgBolsas:hover{
     background-image: url(recursos/servicios-bolsas-tnt-hover.jpg);
     cursor: pointer;
-}
+} */
+
 
 /*cotizar*/
 .sectCotizar{
@@ -619,29 +620,6 @@ section {
 .sectCotizarCatalogo{
     margin-top: 120px;
 }
-/* .sectCotizarCatalogo{
-    display: grid;
-    grid-template-columns: repeat(4, 22.5%);
-    grid-template-rows: repeat(3, 600px);
-    justify-content: center;
-    margin-top: 120px;
-}
-
-.imgCotizarCatalogo{
-    grid-column: 1/span 3;
-    grid-row: 1/2;
-}
-
-.divCotizarCatalogo1{
-    grid-column: 3/span 5;
-    grid-row: 1/2;
-    align-self: center;
-}
-
-.divCotizarCatalogo2{
-    grid-column: 1/span 5;
-    grid-row: 2/3;
-} */
 
 .imgCotizarCatalogo img{
     width: 50%;
@@ -759,7 +737,150 @@ section {
     line-height: 1.9rem;
 }
 
-/*MOBILE---------------------------------------------------------------------------------------------------*/
+/*RESPONSIVE---------------------------------------------------------------------------------------------------*/
+@media only screen and (max-width: 479px){
+    h1, h2{
+        font-size: 2.5rem !important;
+    }
+    
+    /*Banner index*/
+    .textoResaltado{
+        font-size: 1.8rem;
+        width: 300px;
+    }
+
+    .bannerCarrusel h1, .bannerCarrusel h2{
+        line-height: 2.6rem;
+    }
+
+    .bannerIndex{
+        margin-top: 120px;
+        height: 100%;
+    }
+
+    .bannerIndex img{
+        object-fit: cover;
+        height: 400px;
+    }
+    .carousel-caption{
+        padding-top:0;
+        text-align: start;
+        margin-top: -200px;
+        width: 100px;
+        padding-bottom: 50px;
+    }
+
+    .carousel-control-next, .carousel-control-prev{
+        margin-top: 200px;
+    }
+
+    .anclaInvisible{
+        top: 360px;
+    }
+
+    /*Conócenos*/
+    .divConocenos img{
+        display: none;
+    }
+    
+    .sectionConocenos{
+        margin-top: 20px;
+    }
+
+    /*Portafolio*/
+    .bbb_container {
+        top: 0;
+    }
+
+    /*Footer*/
+    /*icono whatsapp-----------------------------------------------*/
+    .iconoFlotante img{
+        top: 550px;
+    }
+
+    .menuFooter{
+        display: none;
+    }
+
+    .footerContainer{
+        grid-template-columns: 60%;
+    }
+    .footerContainer .redesFooter{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        align-self: end;
+        justify-self: center;
+    }
+    
+    .footerContainer .footerCopy{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        align-self: start;
+        justify-self: center;
+    }
+
+    /*Servicios*/
+    .sectServicios{
+        grid-template-columns: repeat(2, 2fr);
+        grid-template-rows: repeat(8, 120px);
+        margin-top: 110px;
+    }
+
+    .sectServicios p{
+        font-size: 1.3rem;
+    }
+    
+    .sectServicios h2{
+        font-size: 2rem !important;
+    }
+
+    .textVasosP{
+        grid-column: 1/span 3;
+        grid-row: 2/3;
+        padding-bottom: 45px;
+    }
+
+    .imgVasosP{
+        grid-column: 1/span 3;
+        grid-row: 1/span 3;
+    }
+
+    .textEnvasesP{
+        grid-column: 1/span 3;
+        grid-row: 4/5;
+        padding-bottom: 45px;
+    }
+    
+    .imgEnvasesP{
+        grid-column: 1/span 3;
+        grid-row: 3/span 5;
+    }
+
+    .textVasosC{
+        grid-column: 1/span 3;
+        grid-row: 6/7;
+        padding-bottom: 45px;
+    }
+    
+    .imgVasosC{
+        grid-column: 1/span 3;
+        grid-row: 5/span 7;
+        background-position: bottom;
+    }
+
+    .textBolsas{
+        grid-column: 1/span 3;
+        grid-row: 8/9;
+        padding-bottom: 45px;
+    }
+    
+    .imgBolsas{
+        grid-column: 1/span 3;
+        grid-row: 7/span 9;
+        background-position: center;
+    }
+}
+
 @media only screen and (min-width: 480px) and (max-width: 767px) {
     h1, h2{
         font-size: 3rem !important;
@@ -797,6 +918,10 @@ section {
     }
 
     /*Conócenos*/
+    .anclaInvisible{
+        top: 300px;
+    }
+
     .divConocenos img{
         display: none;
     }
@@ -819,7 +944,68 @@ section {
     .footerContainer{
         grid-template-columns: 25% 60% 10%;
     }
+    /*Servicios*/
+    .sectServicios{
+        grid-template-columns: repeat(2, 2fr);
+        grid-template-rows: repeat(8, 120px);
+        margin-top: 110px;
+    }
+
+    .sectServicios p{
+        font-size: 1.3rem;
+    }
+    
+    .sectServicios h2{
+        font-size: 2rem !important;
+    }
+
+    .textVasosP{
+        grid-column: 1/span 3;
+        grid-row: 2/3;
+        padding-bottom: 45px;
+    }
+
+    .imgVasosP{
+        grid-column: 1/span 3;
+        grid-row: 1/span 3;
+    }
+
+    .textEnvasesP{
+        grid-column: 1/span 3;
+        grid-row: 4/5;
+        padding-bottom: 45px;
+    }
+    
+    .imgEnvasesP{
+        grid-column: 1/span 3;
+        grid-row: 3/span 5;
+    }
+
+    .textVasosC{
+        grid-column: 1/span 3;
+        grid-row: 6/7;
+        padding-bottom: 45px;
+    }
+    
+    .imgVasosC{
+        grid-column: 1/span 3;
+        grid-row: 5/span 7;
+        background-position: bottom;
+    }
+
+    .textBolsas{
+        grid-column: 1/span 3;
+        grid-row: 8/9;
+        padding-bottom: 45px;
+    }
+    
+    .imgBolsas{
+        grid-column: 1/span 3;
+        grid-row: 7/span 9;
+        background-position: center;
+    }
 }
+
 
 @media only screen and (min-width: 767px) and (max-width: 992px) {
 
@@ -841,19 +1027,37 @@ section {
     }
 
     /*Conócenos*/
+    .anclaInvisible{
+        top: 520px;
+    }
+
     .divConocenos img{
         display: none;
     }
-   /*  
-    
-    .sectionConocenos{
-        margin-top: 20px;
-    } */
 
     /*Footer*/
     /*icono whatsapp-----------------------------------------------*/
     .iconoFlotante img{
         top: 550px;
+    }
+
+    /*Servicios*/
+    .sectServicios{
+        grid-template-rows: repeat(4, 200px);
+        margin-top: 120px;
+    }
+
+    .sectServicios p{
+        font-size: 1.5rem;
+    }
+    
+    .sectServicios h2{
+        font-size: 2rem !important;
+    }
+
+    .textVasosP, .textEnvasesP, .textVasosC, .textBolsas{
+        margin-left: 25px;
+        padding-bottom: 65px
     }
 }
 
