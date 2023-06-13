@@ -92,8 +92,13 @@ header img{
 
 /*Banner index*/
 .carousel-control-next, .carousel-control-prev{
+    height: 200px;
+    margin-top: 305px;
+}
+
+.bannerIndex{
+    height: 610px;
     margin-top: 120px;
-    height: 80%;
 }
 
 .carousel-control-prev-icon{
@@ -138,11 +143,6 @@ header img{
     display: flex;
     align-content: start;
     padding-bottom: 80px;
-}
-
-.bannerIndex{
-    height: 610px;
-    margin-top: 120px;
 }
 
 .bannerCarrusel h1, .bannerCarrusel h2{
@@ -760,16 +760,11 @@ section {
 }
 
 /*MOBILE---------------------------------------------------------------------------------------------------*/
-@media only screen and (min-width: 576px) and (max-width: 767px) {
+@media only screen and (min-width: 480px) and (max-width: 767px) {
     h1, h2{
         font-size: 3rem !important;
     }
     
-    /*icono whatsapp-----------------------------------------------*/
-    .iconoFlotante img{
-        top: 550px;
-    }
-
     /*Banner index*/
     .textoResaltado{
         font-size: 2rem;
@@ -781,7 +776,7 @@ section {
 
     .bannerIndex{
         margin-top: 90px;
-        height: 380px;
+        height: 100%;
     }
 
     .carousel-caption{
@@ -793,10 +788,8 @@ section {
         height: 200px;
     }
 
-    .carousel-control-next .carousel-control-prev{
-        margin-top: 200px;
-        height: 40%;
-        align-items: end;
+    .carousel-control-next, .carousel-control-prev{
+        margin-top: 150px;
     }
 
     .anclaInvisible{
@@ -811,37 +804,63 @@ section {
     .sectionConocenos{
         margin-top: 20px;
     }
+
+    /*Portafolio*/
+    .bbb_container {
+        top: 0;
+    }
+
+    /*Footer*/
+    /*icono whatsapp-----------------------------------------------*/
+    .iconoFlotante img{
+        top: 550px;
+    }
+
+    .footerContainer{
+        grid-template-columns: 25% 60% 10%;
+    }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 992px) {
+@media only screen and (min-width: 767px) and (max-width: 992px) {
 
     .bannerIndex{
         margin-top: 120px;
-        height: 400px;
+        height: 100%;
     }
     .carousel-caption{
         position: relative;
         padding-top:0;
         text-align: start;
-        margin-top: -350px;
-        width: 400px;
+        margin-top: -210px;
+        width: 700px;
         height: 200px;
+    }
+
+    .carousel-control-next, .carousel-control-prev{
+        margin-top: 260px;
     }
 
     /*Conócenos*/
     .divConocenos img{
         display: none;
     }
+   /*  
     
     .sectionConocenos{
         margin-top: 20px;
+    } */
+
+    /*Footer*/
+    /*icono whatsapp-----------------------------------------------*/
+    .iconoFlotante img{
+        top: 550px;
     }
 }
 
 @media only screen and (min-width: 992px){
     /*icono whatsapp-----------------------------------------------*/
     .iconoFlotante img{
-        top: 750px;
+        top: 550px;
     }
 
     .bannerIndex{
@@ -850,14 +869,5 @@ section {
     }
     .carousel-caption{
         width: 800px;
-    }
-
-    /*Conócenos*/
-    .divConocenos img{
-        width: 100%;
-    }
-    
-    .sectionConocenos{
-        margin-top: 20px;
     }
 }
