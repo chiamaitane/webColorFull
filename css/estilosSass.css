@@ -39,6 +39,27 @@ a {
   border-right: 5px solid transparent;
   border-left: 5px solid transparent;
 }
+.navPropio .menuContenedor .menu .navbar-nav .dropdown .menuDesplegable {
+  border: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 10px 10px;
+}
+.navPropio .menuContenedor .menu .navbar-nav .dropdown .menuDesplegable li a {
+  font-weight: 400;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+.navPropio .menuContenedor .menu .navbar-nav .dropdown .menuDesplegable .dropdown-item {
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+.navPropio .menuContenedor .menu .navbar-nav .dropdown .menuDesplegable .dropdown-item:hover {
+  background-color: #e6f7ff;
+}
+.navPropio .menuContenedor .menu .navbar-nav .dropdown .menuDesplegable .dropdown-item:active {
+  background-color: #E5007E;
+  color: #fff;
+}
 .navPropio .menuContenedor .menu li a {
   font-weight: 400;
   color: black;
@@ -46,28 +67,6 @@ a {
 }
 .navPropio .menuContenedor .menu li a:hover {
   color: #E5007E;
-}
-.navPropio .menuContenedor .menu .menuDesplegable li a {
-  font-weight: 400;
-  color: black;
-  font-size: 1.5rem;
-  text-transform: uppercase;
-}
-.navPropio .menuContenedor .menu .menuDesplegable li a:active {
-  background-color: #E5007E;
-  color: #fff;
-}
-.navPropio .menuContenedor .menu .menuDesplegable {
-  border: none;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-  border-radius: 0 0 10px 10px;
-}
-.navPropio .menuContenedor .menu .menuDesplegable .dropdown-item {
-  padding: 10px 20px;
-  transition: background-color 0.3s ease;
-}
-.navPropio .menuContenedor .menu .menuDesplegable .dropdown-item:hover {
-  background-color: #e6f7ff;
 }
 
 /*footer*/
@@ -309,6 +308,199 @@ a {
 }
 .trends .bbb_item .bbb_image img {
   width: 100%;
+}
+
+/*servicios*/
+.sectServicios {
+  display: grid;
+  grid-template-columns: 40% 10% 40% 10%;
+  grid-template-rows: repeat(4, 350px);
+  margin-top: 120px;
+}
+.sectServicios .imgVasosP {
+  grid-column: 1/span 3;
+  grid-row: 1/span 3;
+  background-image: url(../recursos/servicios-vasos-plasticos.jpg);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-image 0.3s ease;
+}
+.sectServicios .textVasosP {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  align-self: center;
+  margin-left: 50px;
+}
+.sectServicios .textVasosP .btn-primary {
+  --bs-btn-bg: #E5007E;
+  --bs-btn-border-color: #E5007E;
+  --bs-btn-hover-bg: transparent;
+  --bs-btn-hover-border-color: #fff;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #E5007E;
+  --bs-btn-active-border-color: #E5007E;
+}
+.sectServicios .textVasosP .btn-primary .iconoVerMas {
+  width: 16px;
+  color: #fff;
+}
+.sectServicios .textVasosP .botonVer {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff;
+  padding-bottom: 0px;
+}
+.sectServicios .textVasosP h2 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: #fff;
+}
+.sectServicios .textVasosP .descripcionServic .card-body {
+  background-color: transparent;
+}
+.sectServicios .textVasosP .descripcionServic .card-body p {
+  font-size: 1.7rem;
+  color: #fff;
+}
+.sectServicios .imgEnvasesP {
+  grid-column: 3/span 5;
+  grid-row: 1/span 3;
+  background-image: url(../recursos/servicios-envases.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.sectServicios .textEnvasesP {
+  grid-column: 3/4;
+  grid-row: 2/3;
+  align-self: center;
+  margin-left: 50px;
+}
+.sectServicios .textEnvasesP .btn-primary {
+  --bs-btn-bg: #E5007E;
+  --bs-btn-border-color: #E5007E;
+  --bs-btn-hover-bg: transparent;
+  --bs-btn-hover-border-color: #fff;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #E5007E;
+  --bs-btn-active-border-color: #E5007E;
+}
+.sectServicios .textEnvasesP .btn-primary .iconoVerMas {
+  width: 16px;
+  color: #fff;
+}
+.sectServicios .textEnvasesP .botonVer {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff;
+  padding-bottom: 0px;
+}
+.sectServicios .textEnvasesP h2 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: #fff;
+}
+.sectServicios .textEnvasesP .descripcionServic .card-body {
+  background-color: transparent;
+}
+.sectServicios .textEnvasesP .descripcionServic .card-body p {
+  font-size: 1.7rem;
+  color: #fff;
+}
+.sectServicios .imgVasosC {
+  grid-column: 1/span 3;
+  grid-row: 3/span 5;
+  background-image: url(../recursos/servicios-vasos-carton.jpg);
+  background-size: 150%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.sectServicios .textVasosC {
+  grid-column: 1/2;
+  grid-row: 4/5;
+  align-self: center;
+  margin-left: 50px;
+}
+.sectServicios .textVasosC .btn-primary {
+  --bs-btn-bg: #E5007E;
+  --bs-btn-border-color: #E5007E;
+  --bs-btn-hover-bg: transparent;
+  --bs-btn-hover-border-color: #fff;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #E5007E;
+  --bs-btn-active-border-color: #E5007E;
+}
+.sectServicios .textVasosC .btn-primary .iconoVerMas {
+  width: 16px;
+  color: #fff;
+}
+.sectServicios .textVasosC .botonVer {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff;
+  padding-bottom: 0px;
+}
+.sectServicios .textVasosC h2 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: #fff;
+}
+.sectServicios .textVasosC .descripcionServic .card-body {
+  background-color: transparent;
+}
+.sectServicios .textVasosC .descripcionServic .card-body p {
+  font-size: 1.7rem;
+  color: #fff;
+}
+.sectServicios .imgBolsas {
+  grid-column: 3/span 5;
+  grid-row: 3/span 5;
+  background-image: url(../recursos/servicios-bolsas-tnt.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.sectServicios .textBolsas {
+  grid-column: 3/4;
+  grid-row: 4/5;
+  align-self: center;
+  margin-left: 50px;
+}
+.sectServicios .textBolsas .btn-primary {
+  --bs-btn-bg: #E5007E;
+  --bs-btn-border-color: #E5007E;
+  --bs-btn-hover-bg: transparent;
+  --bs-btn-hover-border-color: #fff;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #E5007E;
+  --bs-btn-active-border-color: #E5007E;
+}
+.sectServicios .textBolsas .btn-primary .iconoVerMas {
+  width: 16px;
+  color: #fff;
+}
+.sectServicios .textBolsas .botonVer {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff;
+  padding-bottom: 0px;
+}
+.sectServicios .textBolsas h2 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: #fff;
+}
+.sectServicios .textBolsas .descripcionServic .card-body {
+  background-color: transparent;
+}
+.sectServicios .textBolsas .descripcionServic .card-body p {
+  font-size: 1.7rem;
+  color: #fff;
 }
 
 /*# sourceMappingURL=estilosSass.css.map */
