@@ -1,0 +1,140 @@
+/*header - main*/
+.navPropio {
+    width: 100%;
+    align-items: center;
+
+    .menuContenedor {
+        img {
+            width: 250px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        .menu {
+            justify-content: flex-end;
+
+            .navbar-nav {
+                .nav-link {
+                    padding-left: 2.6rem;
+                }
+
+                .dropdown{
+                    .dropdown-toggle::after {
+                        border-top: 5px solid;
+                        border-right: 5px solid transparent;
+                        border-left: 5px solid transparent;
+                      }
+                }
+            }
+
+            li a {
+                font-weight: 400;
+                color: black;
+                font-size: 2rem;
+            }
+
+            li a:hover{
+                color: #E5007E;
+            }
+
+            .menuDesplegable{
+                li a{
+                    font-weight: 400;
+                    color: black;
+                    font-size: 1.5rem;
+                    text-transform: uppercase;
+                }
+
+                li a:active{
+                    background-color: #E5007E;
+                    color: #fff;
+                }
+            }
+
+            .menuDesplegable{
+                border: none;
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+                border-radius: 0 0 10px 10px;
+
+                .dropdown-item{
+                    padding: 10px 20px;
+                    transition: background-color 0.3s ease;
+                }
+
+                .dropdown-item:hover {
+                    background-color: #e6f7ff;
+                }
+            }
+        }
+    }
+}
+
+/*footer*/
+/*icono whatsapp*/
+.iconoFlotante{
+    img{
+        width: 70px;
+        position: fixed;
+        top: 620px;
+        z-index: 1;
+        right: 15px;
+    }
+}
+
+/*información footer*/
+.footerContainer{
+    background-color: #009EE2;
+    display: grid;
+    grid-template-columns: repeat(2, 30%) 20%;
+    grid-template-rows: repeat(2, 90px);
+    justify-content: center;
+    align-content: center;
+    row-gap: 10px;
+    column-gap: 10px;
+
+    .menuFooter{
+        grid-column: 1/2;
+        grid-row: 1/span 3;
+        align-self: center;
+
+        ul{
+            padding-left: 1rem;
+            list-style: none;
+          }
+        
+        a{
+        color: white;
+        text-decoration: none;
+        font-size: 1.5rem;
+        font-weight: 600;
+        }
+
+        a:hover{
+            color: black;
+        }
+    }
+
+    .redesFooter{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        align-self: end;
+        justify-self: center;
+    }
+
+    .footerCopy{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        align-self: start;
+        justify-self: center;
+
+        p{
+            color: white;
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+    }
+
+    img{
+        width: 40px;
+    }
+}
