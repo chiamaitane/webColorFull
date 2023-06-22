@@ -53,48 +53,50 @@
         </nav>
     </header>
     <main>
-        <section class="sectCotizarCatalogo">
+        <section class="sectCotizarCatalogo d-flex justify-content-center align-items-center">
             <div class="row">
-                <div class="imgCotizarCatalogo col-sm-12 col-lg-6"><img src="../recursos/catizar-catalogo-1.jpg" alt="">
-                </div>
-                <div class="divCotizarCatalogo1 col-sm-12 col-lg-6">
-                    <h2>Indícanos cómo será tu pedido</h2>
-        
+                <!-- <div class="imgCotizarCatalogo col-sm-12 col-lg-6"><img src="../recursos/catizar-catalogo-1.jpg" alt=""> -->
+            </div>
+            <div class="divCotizarCatalogo1 shadow bg-body rounded">
+                <h2 class="text-center">Indícanos cómo será tu pedido</h2>
+            
+                <div class="divContInfoCatalg d-flex flex-column align-items-center">
                     <p>Elige el material</p>
-                    <div class="form-check form-check-inline materialCatalogo">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
-                            value="option1">
-                        <label class="form-check-label" for="inlineRadio1">Plástico</label>
+
+                    <div class="opcMaterialCatalg flex-row">
+                        <div class="form-check form-check-inline materialCatalogo">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                            <label class="form-check-label" for="inlineRadio1">Plástico</label>
+                        </div>
+                        <div class="form-check form-check-inline materialCatalogo">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                            <label class="form-check-label" for="inlineRadio2">Cartón</label>
+                        </div>
+                        <div class="form-check form-check-inline materialCatalogo">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                            <label class="form-check-label" for="inlineRadio3">Bolsas</label>
+                        </div>
                     </div>
-                    <div class="form-check form-check-inline materialCatalogo">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
-                            value="option2">
-                        <label class="form-check-label" for="inlineRadio2">Cartón</label>
-                    </div>
-                    <div class="form-check form-check-inline materialCatalogo">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
-                            value="option2">
-                        <label class="form-check-label" for="inlineRadio3">Bolsas</label>
-                    </div>
-        
+            
                     <p>¿Cuál es el tamaño?</p>
                     <div class="input-group tamañoCatalogo">
-                        <select class="form-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+                        <select class="form-select selectorTamaño" id="inputGroupSelect04"
+                            aria-label="Example select with button addon">
                             <option selected>Seleccionar...</option>
                             <option value="1">330cc</option>
                             <option value="2">380cc</option>
                             <option value="3">500cc</option>
                         </select>
                     </div>
-        
+            
                     <form>
-                        <div class="mb-3 tamañoCatalogo">
-                            <label for="exampleInputEmail1" class="form-label">¿Qué cantidad?</label>
+                        <div class="tamañoCatalogo">
+                            <label for="exampleInputEmail1" class="form-label"><p>¿Qué cantidad?</p></label>
                             <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                             <div id="emailHelp" class="form-text">Deben ser mínimo 50 unidades</div>
                         </div>
                     </form>
-        
+            
                     <div class="divCotizarCatalogo2">
                         <p>Elige el Diseño</p>
                         <div class="imgCatal1"></div>
@@ -105,6 +107,7 @@
                         <div class="imgCatal6"></div>
                     </div>
                 </div>
+            </div>
             </div>
         </section>
     </main>
