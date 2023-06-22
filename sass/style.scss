@@ -12,12 +12,15 @@ html{
     forma es más fácil usar los rem. Rem se adapat mejor a los dispositivos*/
     font-size: 62.5%;
     font-family: 'Lato', sans-serif;
+    a{
+        text-decoration: none;
+    }
 }
 
-a{
-    text-decoration: none;
-}
-
-@import "partials/headerFooter.scss";
-@import "partials/index.scss";
+@import "partials/headerFooter";
+@import "partials/index";
 @import "partials/servicios";
+@import "partials/disenoCatalogo";
+@import "partials/disenoPersonalizado";
+@import "partials/contactanos";
+@import "partials/responsive";

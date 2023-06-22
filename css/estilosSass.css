@@ -13,8 +13,7 @@ html {
   font-size: 62.5%;
   font-family: "Lato", sans-serif;
 }
-
-a {
+html a {
   text-decoration: none;
 }
 
@@ -154,7 +153,14 @@ a {
   color: #fff;
   text-shadow: 2px 1px 5px rgb(58, 58, 58);
 }
-.bannerCarrusel .bannerIndex .carousel-caption h1, .bannerCarrusel .bannerIndex .carousel-caption h2 {
+.bannerCarrusel .bannerIndex .carousel-caption h1 {
+  text-transform: uppercase;
+  font-size: 4rem;
+  line-height: 40px;
+  color: #fff;
+  text-shadow: 2px 1px 5px rgb(58, 58, 58);
+}
+.bannerCarrusel .bannerIndex .carousel-caption h2 {
   text-transform: uppercase;
   font-size: 4rem;
   line-height: 40px;
@@ -305,6 +311,7 @@ a {
 .trends .bbb_item {
   background: #FFFFFF;
   padding: 3px;
+  margin-top: 35px;
 }
 .trends .bbb_item .bbb_image img {
   width: 100%;
@@ -501,6 +508,456 @@ a {
 .sectServicios .textBolsas .descripcionServic .card-body p {
   font-size: 1.7rem;
   color: #fff;
+}
+
+.sectCotizarCatalogo {
+  margin-top: 120px;
+}
+.sectCotizarCatalogo .imgCotizarCatalogo img {
+  width: 50%;
+}
+.sectCotizarCatalogo .divCotizarCatalogo1 h2 {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+}
+.sectCotizarCatalogo .divCotizarCatalogo1 p {
+  font-size: 2rem;
+  margin-top: 30px;
+}
+.sectCotizarCatalogo .divCotizarCatalogo1 .materialCatalogo {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.sectCotizarCatalogo .divCotizarCatalogo1 .materialCatalogo .form-check-input:checked {
+  background-color: #E5007E;
+  border-color: #E5007E;
+  box-shadow: none;
+}
+.sectCotizarCatalogo .divCotizarCatalogo1 .materialCatalogo .form-check-input:active {
+  background-color: #ffbde1;
+  border-color: #ffbde1;
+  box-shadow: none;
+}
+.sectCotizarCatalogo .divCotizarCatalogo1 .form-check-inline {
+  margin-right: 3rem;
+}
+.sectCotizarCatalogo .divCotizarCatalogo1 .tamañoCatalogo {
+  width: 320px;
+}
+.sectCotizarCatalogo .divCotizarCatalogo1 .tamañoCatalogo .form-select {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+.sectCotizarCatalogo .divCotizarCatalogo1 .tamañoCatalogo .form-label {
+  font-size: 2rem;
+  margin-top: 30px;
+}
+.sectCotizarCatalogo .divCotizarCatalogo1 .tamañoCatalogo .form-label .form-text {
+  font-size: 1.4rem;
+}
+
+/*cotizar personalizado*/
+.sectCotizarPersonalizado {
+  display: grid;
+  grid-template-columns: 15% repeat(2, 35%) 15%;
+  grid-template-rows: 150px 500px 150px 50px;
+}
+.sectCotizarPersonalizado .bannerCotizarPersonalizado {
+  grid-column: 1/span 4;
+  grid-row: 1/span 5;
+  background-image: url(../recursos/banner-cotizar-personalizado.jpg);
+  background-size: cover;
+}
+.sectCotizarPersonalizado .fondoDescripcion {
+  grid-column: 2/4;
+  grid-row: 2/3;
+  background-color: #fff;
+  opacity: 50%;
+}
+.sectCotizarPersonalizado .divDescripcion {
+  grid-column: 2/4;
+  grid-row: 2/3;
+  width: 40%;
+  z-index: 1;
+}
+.sectCotizarPersonalizado .formularioPersonalizado {
+  grid-column: 3/4;
+  grid-row: 2/span 2;
+  background-color: #009EE2;
+  z-index: 1;
+  color: #fff;
+}
+.sectCotizarPersonalizado .formularioPersonalizado h2 {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+/*Contáctanos*/
+.divBannerConoc {
+  background-image: url(../recursos/banner-contacto.jpg);
+  background-position: cover;
+  background-size: 100%;
+  height: 700px;
+  margin-top: 120px;
+}
+.divBannerConoc .divDatosConoc {
+  width: 500px;
+  font-size: 1.7rem;
+  color: #fff;
+  font-weight: 700;
+  line-height: 1.9rem;
+}
+.divBannerConoc .divDatosConoc svg {
+  margin-right: 10px;
+}
+
+/*responsive*/
+@media only screen and (max-width: 479px) {
+  /*Banner index*/
+  .bannerCarrusel .bannerIndex {
+    margin-top: 120px;
+    height: 100%;
+  }
+  .bannerCarrusel .bannerIndex img {
+    object-fit: cover;
+    height: 400px;
+  }
+  .bannerCarrusel .bannerIndex .carousel-caption {
+    padding-top: 0;
+    text-align: start;
+    margin-top: -200px;
+    width: 100px;
+    padding-bottom: 50px;
+  }
+  .bannerCarrusel .bannerIndex .carousel-caption h1 {
+    font-size: 2.5rem !important;
+    line-height: 2.6rem;
+  }
+  .bannerCarrusel .bannerIndex .carousel-caption h2 {
+    font-size: 2.5rem !important;
+    line-height: 2.6rem;
+  }
+  .bannerCarrusel .bannerIndex .carousel-caption .textoResaltado {
+    font-size: 1.8rem;
+    width: 300px;
+  }
+  .bannerCarrusel .carousel-control-prev, .bannerCarrusel .carousel-control-next {
+    margin-top: 200px;
+  }
+  .bannerCarrusel .carousel-control-next {
+    margin-top: 200px;
+  }
+  .bannerCarrusel .anclaInvisible {
+    top: 360px;
+  }
+  /*Conócenos*/
+  .sectionConocenos {
+    margin-top: 20px;
+  }
+  .sectionConocenos .divConocenos img {
+    display: none;
+  }
+  /*Portafolio*/
+  .bbb_container {
+    top: 0;
+  }
+  /*Footer*/
+  /*icono whatsapp*/
+  .iconoFlotante img {
+    top: 550px;
+  }
+  /*información footer*/
+  .footerContainer {
+    grid-template-columns: 60%;
+  }
+  .footerContainer .menuFooter {
+    display: none;
+  }
+  .footerContainer .redesFooter {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    align-self: end;
+    justify-self: center;
+  }
+  .footerContainer .footerCopy {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    align-self: start;
+    justify-self: center;
+  }
+  /*Servicios*/
+  .sectServicios {
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat(8, 200px);
+    margin-top: 110px;
+  }
+  .sectServicios .imgVasosP {
+    grid-column: 1/span 3;
+    grid-row: 1/span 3;
+    background-position: top;
+  }
+  .sectServicios .textVasosP {
+    grid-column: 1/span 3;
+    grid-row: 2/3;
+    padding-bottom: 50px;
+  }
+  .sectServicios .textVasosP p {
+    font-size: 1.3rem;
+  }
+  .sectServicios .textVasosP h2 {
+    font-size: 2rem !important;
+  }
+  .sectServicios .imgEnvasesP {
+    grid-column: 1/span 3;
+    grid-row: 3/span 5;
+    background-size: 100%;
+    background-position: top;
+  }
+  .sectServicios .textEnvasesP {
+    grid-column: 1/span 3;
+    grid-row: 4/5;
+    padding-bottom: 50px;
+  }
+  .sectServicios .textEnvasesP p {
+    font-size: 1.3rem;
+  }
+  .sectServicios .textEnvasesP h2 {
+    font-size: 2rem !important;
+  }
+  .sectServicios .imgVasosC {
+    grid-column: 1/span 3;
+    grid-row: 5/span 7;
+    background-size: 180%;
+    background-position: top;
+  }
+  .sectServicios .textVasosC {
+    grid-column: 1/span 3;
+    grid-row: 6/7;
+    padding-bottom: 50px;
+  }
+  .sectServicios .textVasosC p {
+    font-size: 1.3rem;
+  }
+  .sectServicios .textVasosC h2 {
+    font-size: 2rem !important;
+  }
+  .sectServicios .imgBolsas {
+    grid-column: 1/span 3;
+    grid-row: 7/span 9;
+    background-position: center;
+  }
+  .sectServicios .textBolsas {
+    grid-column: 1/span 3;
+    grid-row: 8/9;
+    padding-bottom: 50px;
+  }
+  .sectServicios .textBolsas p {
+    font-size: 1.3rem;
+  }
+  .sectServicios .textBolsas h2 {
+    font-size: 2rem !important;
+  }
+}
+@media only screen and (min-width: 479px) and (max-width: 767px) {
+  /*Banner index*/
+  .bannerCarrusel .bannerIndex {
+    margin-top: 90px;
+    height: 100%;
+  }
+  .bannerCarrusel .bannerIndex .carousel-caption {
+    position: relative;
+    padding-top: 0;
+    text-align: start;
+    margin-top: -210px;
+    width: 400px;
+    height: 200px;
+  }
+  .bannerCarrusel .bannerIndex .carousel-caption h1 {
+    font-size: 3rem;
+    line-height: 3.3rem;
+  }
+  .bannerCarrusel .bannerIndex .carousel-caption h2 {
+    font-size: 3rem;
+    line-height: 3.3rem;
+  }
+  .bannerCarrusel .bannerIndex .carousel-caption .textoResaltado {
+    font-size: 2rem;
+  }
+  .bannerCarrusel .carousel-control-prev, .bannerCarrusel .carousel-control-next {
+    margin-top: 150px;
+  }
+  .bannerCarrusel .carousel-control-next {
+    margin-top: 150px;
+  }
+  .bannerCarrusel .anclaInvisible {
+    top: 360px;
+  }
+  /*Conócenos*/
+  .sectionConocenos {
+    margin-top: 20px;
+  }
+  .sectionConocenos .divConocenos img {
+    display: none;
+  }
+  /*Portafolio*/
+  .bbb_container {
+    top: 0;
+  }
+  /*Footer*/
+  /*icono whatsapp*/
+  .iconoFlotante img {
+    top: 550px;
+  }
+  .footerContainer {
+    grid-template-columns: 25% 60% 10%;
+  }
+  /*Servicios*/
+  .sectServicios {
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat(8, 200px);
+    margin-top: 110px;
+  }
+  .sectServicios .imgVasosP {
+    grid-column: 1/span 3;
+    grid-row: 1/span 3;
+    background-position: top;
+  }
+  .sectServicios .textVasosP {
+    grid-column: 1/span 3;
+    grid-row: 2/3;
+    padding-bottom: 50px;
+  }
+  .sectServicios .textVasosP p {
+    font-size: 1.3rem;
+  }
+  .sectServicios .textVasosP h2 {
+    font-size: 2rem !important;
+  }
+  .sectServicios .imgEnvasesP {
+    grid-column: 1/span 3;
+    grid-row: 3/span 5;
+    background-size: 100%;
+    background-position: top;
+  }
+  .sectServicios .textEnvasesP {
+    grid-column: 1/span 3;
+    grid-row: 4/5;
+    padding-bottom: 50px;
+  }
+  .sectServicios .textEnvasesP p {
+    font-size: 1.3rem;
+  }
+  .sectServicios .textEnvasesP h2 {
+    font-size: 2rem !important;
+  }
+  .sectServicios .imgVasosC {
+    grid-column: 1/span 3;
+    grid-row: 5/span 7;
+    background-size: 180%;
+    background-position: top;
+  }
+  .sectServicios .textVasosC {
+    grid-column: 1/span 3;
+    grid-row: 6/7;
+    padding-bottom: 50px;
+  }
+  .sectServicios .textVasosC p {
+    font-size: 1.3rem;
+  }
+  .sectServicios .textVasosC h2 {
+    font-size: 2rem !important;
+  }
+  .sectServicios .imgBolsas {
+    grid-column: 1/span 3;
+    grid-row: 7/span 9;
+    background-position: center;
+  }
+  .sectServicios .textBolsas {
+    grid-column: 1/span 3;
+    grid-row: 8/9;
+    padding-bottom: 50px;
+  }
+  .sectServicios .textBolsas p {
+    font-size: 1.3rem;
+  }
+  .sectServicios .textBolsas h2 {
+    font-size: 2rem !important;
+  }
+}
+@media only screen and (min-width: 767px) and (max-width: 992px) {
+  .bannerCarrusel .bannerIndex {
+    margin-top: 120px;
+    height: 100%;
+  }
+  .bannerCarrusel .bannerIndex .carousel-caption {
+    position: relative;
+    padding-top: 0;
+    text-align: start;
+    margin-top: -210px;
+    width: 700px;
+    height: 200px;
+  }
+  .bannerCarrusel .carousel-control-prev, .bannerCarrusel .carousel-control-next {
+    margin-top: 260px;
+  }
+  .bannerCarrusel .carousel-control-next {
+    margin-top: 260px;
+  }
+  .bannerCarrusel .anclaInvisible {
+    top: 520px;
+  }
+  /*conócenos*/
+  .divConocenos img {
+    display: none;
+  }
+  /*Footer*/
+  /*icono whatsapp*/
+  .iconoFlotante img {
+    top: 550px;
+  }
+  /*Servicios*/
+  .sectServicios {
+    grid-template-rows: repeat(4, 200px);
+    margin-top: 120px;
+  }
+  .sectServicios p {
+    font-size: 1.5rem;
+  }
+  .sectServicios h2 {
+    font-size: 2rem !important;
+  }
+  .sectServicios .textVasosP {
+    margin-left: 25px;
+    padding-bottom: 65px;
+  }
+  .sectServicios .textEnvasesP {
+    margin-left: 25px;
+    padding-bottom: 65px;
+  }
+  .sectServicios .textVasosC {
+    margin-left: 25px;
+    padding-bottom: 65px;
+  }
+  .sectServicios .textBolsas {
+    margin-left: 25px;
+    padding-bottom: 65px;
+  }
+}
+@media only screen and (min-width: 993px) {
+  /*Footer*/
+  /*icono whatsapp*/
+  .iconoFlotante img {
+    top: 550px;
+  }
+  /*Banner index*/
+  .bannerCarrusel .bannerIndex {
+    margin-top: 120px;
+    height: 600px;
+  }
+  .bannerCarrusel .bannerIndex .carousel-caption {
+    width: 800px;
+  }
 }
 
 /*# sourceMappingURL=estilosSass.css.map */

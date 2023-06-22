@@ -1,0 +1,40 @@
+/*cotizar personalizado*/
+.sectCotizarPersonalizado{
+    display: grid;
+    grid-template-columns: 15% repeat(2, 35%) 15%;
+    grid-template-rows: 150px 500px 150px 50px;
+
+    .bannerCotizarPersonalizado{
+        grid-column: 1/span 4;
+        grid-row: 1/span 5;
+        background-image: url(../recursos/banner-cotizar-personalizado.jpg);
+        background-size: cover;
+    }
+
+    .fondoDescripcion{
+        grid-column: 2/4;
+        grid-row: 2/3;
+        background-color: #fff;
+        opacity: 50%;
+    }
+
+    .divDescripcion{
+        grid-column: 2/4;
+        grid-row: 2/3;
+        width: 40%;
+        z-index: 1;
+    }
+    
+    .formularioPersonalizado{
+        grid-column: 3/4;
+        grid-row: 2/span 2;
+        background-color: #009EE2;
+        z-index: 1;
+        color: #fff;
+
+        h2{
+            font-size: 3rem;
+            text-transform: uppercase;
+        }
+    }
+}
