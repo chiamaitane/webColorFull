@@ -172,16 +172,16 @@ html a {
   border: 2px solid transparent;
   color: #fff;
   padding: 15px 32px;
-  font-size: 16px;
+  font-size: 1.6rem;
   margin: 4px;
   border-radius: 10px;
   cursor: pointer;
   text-align: center;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 500;
   display: block;
   margin-top: 10px;
-  z-index: 2;
+  z-index: auto;
 }
 .bannerCarrusel .bannerIndex .carousel-caption .botonCotizar:hover {
   background-color: transparent;
@@ -239,12 +239,12 @@ html a {
   border: 2px solid transparent;
   color: #fff;
   padding: 15px 32px;
-  font-size: 16px;
+  font-size: 1.6rem;
   border-radius: 10px;
   cursor: pointer;
   text-align: center;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 500;
 }
 .sectionConocenos .divConocenos .botonCotizar2:hover {
   background-color: transparent;
@@ -514,21 +514,27 @@ html a {
 .sectCotizarCatalogo {
   margin-top: 120px;
   background-image: linear-gradient(to bottom, #fe88c9, #d88ee1, #a795ee, #6b9bee, #009ee2);
-  height: 600px;
+  height: 1000px;
 }
 .sectCotizarCatalogo .divCotizarCatalogo1 {
   background-color: #fff;
-  width: 500px;
-  height: 500px;
+  margin-top: 30px;
+  width: 900px;
+  height: 600px;
 }
-.sectCotizarCatalogo .divCotizarCatalogo1 h2 {
-  margin-top: 40px;
-  text-transform: uppercase;
-  font-size: 2rem;
+.sectCotizarCatalogo .divCotizarCatalogo1 .imgCotizarCatalogo img {
+  width: 100%;
+  padding-left: 20px;
+  padding-top: 60px;
 }
 .sectCotizarCatalogo .divCotizarCatalogo1 .divContInfoCatalg {
   width: 500px;
   height: 500px;
+}
+.sectCotizarCatalogo .divCotizarCatalogo1 .divContInfoCatalg h2 {
+  margin-top: 20px;
+  text-transform: uppercase;
+  font-size: 2rem;
 }
 .sectCotizarCatalogo .divCotizarCatalogo1 .divContInfoCatalg p {
   text-transform: uppercase;
@@ -554,23 +560,75 @@ html a {
 .sectCotizarCatalogo .divCotizarCatalogo1 .divContInfoCatalg .form-check-inline {
   margin-right: 3rem;
 }
-.sectCotizarCatalogo .divCotizarCatalogo1 .divContInfoCatalg .tamañoCatalogo {
+.sectCotizarCatalogo .divCotizarCatalogo1 .divContInfoCatalg .tamanoCatalogo {
   width: 320px;
 }
-.sectCotizarCatalogo .divCotizarCatalogo1 .divContInfoCatalg .tamañoCatalogo .form-select {
+.sectCotizarCatalogo .divCotizarCatalogo1 .divContInfoCatalg .tamanoCatalogo .form-select {
   text-transform: uppercase;
   font-size: 1.5rem;
 }
-.sectCotizarCatalogo .divCotizarCatalogo1 .divContInfoCatalg .tamañoCatalogo .form-select:focus {
+.sectCotizarCatalogo .divCotizarCatalogo1 .divContInfoCatalg .tamanoCatalogo .form-select:focus {
   border-color: #ffbde1;
   box-shadow: 0 0 0 0.25rem rgba(255, 189, 255, 0.25);
 }
-.sectCotizarCatalogo .divCotizarCatalogo1 .divContInfoCatalg .tamañoCatalogo .form-select-value:hover {
+.sectCotizarCatalogo .divCotizarCatalogo1 .divContInfoCatalg .tamanoCatalogo .form-select-value:hover {
+  background-color: #E5007E;
+}
+.sectCotizarCatalogo .divCotizarCatalogo1 .divContInfoCatalg .tamanoCatalogo .selectorTamano option:hover {
   background-color: #E5007E;
 }
 .sectCotizarCatalogo .divCotizarCatalogo1 .divContInfoCatalg .form-control:focus {
   border-color: #ffbde1;
   box-shadow: 0 0 0 0.25rem rgba(255, 189, 255, 0.25);
+}
+.sectCotizarCatalogo .divCotizarCatalogo1 .divCotizarCatalogo2 .itemsCatalogo img {
+  width: 60px;
+}
+.sectCotizarCatalogo .datosCotizar {
+  margin-top: 20px;
+  width: 900px;
+  height: 300px;
+}
+.sectCotizarCatalogo .datosCotizar p {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.sectCotizarCatalogo .datosCotizar .formPadding {
+  padding-right: 20px;
+}
+.sectCotizarCatalogo .datosCotizar form .formulario {
+  width: 400px;
+}
+.sectCotizarCatalogo .datosCotizar form .formulario .form-text {
+  font-size: 1.2rem;
+}
+.sectCotizarCatalogo .datosCotizar form .formulario label {
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.sectCotizarCatalogo .datosCotizar form .formulario textarea {
+  resize: none;
+  height: 120px;
+}
+.sectCotizarCatalogo .datosCotizar form .botonEnviar {
+  background-color: #009EE2;
+  border: 2px solid transparent;
+  color: #fff;
+  padding: 10px 25px;
+  font-size: 1.4rem;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-top: 20px;
+}
+.sectCotizarCatalogo .datosCotizar form .botonEnviar:hover {
+  background-color: transparent;
+  border: 2px solid #E5007E;
+  color: #E5007E;
 }
 
 /*cotizar personalizado*/

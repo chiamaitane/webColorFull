@@ -2,22 +2,31 @@
 .sectCotizarCatalogo{
     margin-top: 120px;
     background-image: linear-gradient(to bottom, #fe88c9, #d88ee1, #a795ee, #6b9bee, #009ee2);
-    height: 600px;
+    height: 1000px;
 
     .divCotizarCatalogo1{
         background-color: #fff;
-        width: 500px;
-        height: 500px;
+        margin-top: 30px;
+        width: 900px;
+        height: 600px;
 
-        h2{
-            margin-top: 40px;
-            text-transform: uppercase;
-            font-size: 2rem;
+        .imgCotizarCatalogo{
+            img{
+                width: 100%;
+                padding-left: 20px;
+                padding-top: 60px;
+            }
         }
 
         .divContInfoCatalg{
             width: 500px;
             height: 500px;
+
+            h2{
+                margin-top: 20px;
+                text-transform: uppercase;
+                font-size: 2rem;
+            }
     
             p{
                 text-transform: uppercase;
@@ -48,9 +57,9 @@
                 margin-right: 3rem;
             }
         
-            .tamañoCatalogo{
+            .tamanoCatalogo{
                 width: 320px;
-        
+                
                 .form-select{
                     text-transform: uppercase;
                     font-size: 1.5rem;
@@ -64,11 +73,82 @@
                 .form-select-value:hover {
                     background-color: #E5007E;
                 }
+
+                .selectorTamano{
+                    option:hover{
+                        background-color: #E5007E;
+                    }
+                }
             }
 
             .form-control:focus {
                 border-color: #ffbde1;
                 box-shadow: 0 0 0 0.25rem rgba(255,189,255,.25);
+            }
+        }
+
+        .divCotizarCatalogo2{
+            .itemsCatalogo{
+
+                img{
+                    width: 60px;
+                }
+            }
+        }
+    }
+    
+    .datosCotizar{
+        margin-top: 20px;
+        width: 900px;
+        height: 300px;
+        p{
+            text-transform: uppercase;
+            font-size: 1.4rem;
+            font-weight: bold;
+        }
+
+        .formPadding{
+            padding-right: 20px;
+        }
+
+        form{
+            .formulario{
+                width: 400px;
+
+                .form-text{
+                    font-size: 1.2rem;
+                }
+
+                label{
+                    text-transform: uppercase;
+                    font-size: 1.1rem;
+                    font-weight: 500;
+                }
+
+                textarea{
+                    resize: none;
+                    height: 120px;
+                }
+            }
+
+            .botonEnviar{
+                background-color: #009EE2;
+                border: 2px solid transparent;
+                color: #fff;
+                padding: 10px 25px;
+                font-size: 1.4rem;
+                border-radius: 10px;
+                cursor: pointer;
+                text-align: center;
+                text-transform: uppercase;
+                font-weight: 500;
+                margin-top: 20px;
+            }
+            
+            .botonEnviar:hover{
+                background-color: transparent;
+                border: 2px solid #E5007E;
+                color: #E5007E;
             }
         }
     }

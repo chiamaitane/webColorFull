@@ -53,63 +53,124 @@
         </nav>
     </header>
     <main>
-        <section class="sectCotizarCatalogo d-flex justify-content-center align-items-center">
-            <div class="row">
-                <!-- <div class="imgCotizarCatalogo col-sm-12 col-lg-6"><img src="../recursos/catizar-catalogo-1.jpg" alt=""> -->
-            </div>
+        <section class="sectCotizarCatalogo d-flex flex-column align-items-center">
+                
             <div class="divCotizarCatalogo1 shadow bg-body rounded">
-                <h2 class="text-center">Indícanos cómo será tu pedido</h2>
-            
-                <div class="divContInfoCatalg d-flex flex-column align-items-center">
-                    <p>Elige el material</p>
-
-                    <div class="opcMaterialCatalg flex-row">
-                        <div class="form-check form-check-inline materialCatalogo">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                            <label class="form-check-label" for="inlineRadio1">Plástico</label>
-                        </div>
-                        <div class="form-check form-check-inline materialCatalogo">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                            <label class="form-check-label" for="inlineRadio2">Cartón</label>
-                        </div>
-                        <div class="form-check form-check-inline materialCatalogo">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                            <label class="form-check-label" for="inlineRadio3">Bolsas</label>
-                        </div>
+                <div class="d-flex flex-row align-items-center">
+                    <div class="imgCotizarCatalogo d-flex justify-self-center col-sm-12 col-lg-6"><img
+                            src="../recursos/cotizar-catalogo.jpg" alt="Tintas CMYK">
                     </div>
             
-                    <p>¿Cuál es el tamaño?</p>
-                    <div class="input-group tamañoCatalogo">
-                        <select class="form-select selectorTamaño" id="inputGroupSelect04"
-                            aria-label="Example select with button addon">
-                            <option selected>Seleccionar...</option>
-                            <option value="1">330cc</option>
-                            <option value="2">380cc</option>
-                            <option value="3">500cc</option>
-                        </select>
-                    </div>
+                    <div class="divContInfoCatalg d-flex flex-column align-items-center justify-content-center">
+                        <h2 class="text-center">Indícanos cómo será tu pedido</h2>
             
-                    <form>
-                        <div class="tamañoCatalogo">
-                            <label for="exampleInputEmail1" class="form-label"><p>¿Qué cantidad?</p></label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                            <div id="emailHelp" class="form-text">Deben ser mínimo 50 unidades</div>
+                        <p>Elige el material</p>
+            
+                        <div class="opcMaterialCatalg flex-row">
+                            <div class="form-check form-check-inline materialCatalogo" onchange="showImage()">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                                    value="option1">
+                                <label class="form-check-label" for="inlineRadio1">Plástico</label>
+                            </div>
+                            <div class="form-check form-check-inline materialCatalogo">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                                    value="option2">
+                                <label class="form-check-label" for="inlineRadio2">Cartón</label>
+                            </div>
+                            <div class="form-check form-check-inline materialCatalogo">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                                    value="option2">
+                                <label class="form-check-label" for="inlineRadio3">Bolsas</label>
+                            </div>
                         </div>
-                    </form>
             
-                    <div class="divCotizarCatalogo2">
+                        <p>¿Cuál es el tamaño?</p>
+                        <div class="input-group tamanoCatalogo">
+                            <select class="form-select selectorTamano" id="inputGroupSelect04"
+                                aria-label="Example select with button addon">
+                                <option selected>Seleccionar...</option>
+                                <option value="1">330cc</option>
+                                <option value="2">380cc</option>
+                                <option value="3">500cc</option>
+                            </select>
+                        </div>
+            
+                        <form>
+                            <div class="tamanoCatalogo">
+                                <label for="exampleInputEmail1" class="form-label">
+                                    <p>¿Qué cantidad?</p>
+                                </label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                <div id="emailHelp" class="form-text">Deben ser mínimo 50 unidades</div>
+                            </div>
+                        </form>
+            
                         <p>Elige el Diseño</p>
-                        <div class="imgCatal1"></div>
-                        <div class="imgCatal2"></div>
-                        <div class="imgCatal3"></div>
-                        <div class="imgCatal4"></div>
-                        <div class="imgCatal5"></div>
-                        <div class="imgCatal6"></div>
+                        <div class="divCotizarCatalogo2">
+                            <div class="itemsCatalogo container">
+                                <div class="row">
+                                    <div class="col">
+                                        <div><img src="../recursos/catalogo/opción-c-1.jpg" alt=""></div>
+                                        <div><img src="../recursos/catalogo/opción-m-1.jpg" alt=""></div>
+                                        <div><img src="../recursos/catalogo/opción-t-1.jpg" alt=""></div>
+            
+                                    </div>
+                                    <div class="col">
+                                        <div><img src="../recursos/catalogo/opción-c-2.jpg" alt=""></div>
+                                        <div><img src="../recursos/catalogo/opción-m-2.jpg" alt=""></div>
+                                        <div><img src="../recursos/catalogo/opción-t-2.jpg" alt=""></div>
+                                    </div>
+                                    <div class="col">
+                                        <div><img src="../recursos/catalogo/opción-c-3.jpg" alt=""></div>
+                                        <div><img src="../recursos/catalogo/opción-m-3.jpg" alt=""></div>
+                                        <div><img src="../recursos/catalogo/opción-t-3.jpg" alt=""></div>
+                                    </div>
+                                    <div class="col">
+                                        <div><img src="../recursos/catalogo/opción-m-4.jpg" alt=""></div>
+                                        <div><img src="../recursos/catalogo/opción-t-4.jpg" alt=""></div>
+                                        <div><img src="../recursos/catalogo/opción-t-5.jpg" alt=""></div>
+                                    </div>
+                                    <div class="col">
+                                        <div><img src="../recursos/catalogo/opción-m-5.jpg" alt=""></div>
+                                        <div><img src="../recursos/catalogo/opción-t-6.jpg" alt=""></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+
+            <div class="datosCotizar d-flex flex-column align-items-center justify-content-center shadow bg-body rounded">
+                <p>Tus datos</p>
+                <form class="d-flex flex-row">
+                    <div class="formPadding flex-column">
+                        <div class="formulario mb-3">
+                            <label for="inputNombre" class="form-label">Nombre y Apellido</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1">
+                        </div>
+                    
+                        <div class="formulario mb-3">
+                            <label for="inputEmail" class="form-label">Correo Electrónico</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">ejemplo@mail.com</div>
+                        </div>
+                        <a href="#"><button class="botonEnviar">Enviar</button></a>
+                    </div>
+                    <div class="formulario flex-column">
+                        <div class="mb-3">
+                            <label for="inputCel" class="form-label">Celular</label>
+                            <input type="tel" class="form-control" id="exampleInputEmail1">
+                            <div id="emailHelp" class="form-text">+56 9 9999 9999</div>
+                        </div>
+                        <div >
+                            <textarea class="form-control" aria-label="With textarea" placeholder="Aquí puedes agregar un comentario"></textarea>
+                          </div>
+                    </div>
+                  </form>
             </div>
         </section>
+
     </main>
     <footer>
         <!-- redes sociales, copyright -->
@@ -138,5 +199,8 @@
     </footer>
     <!--bs script de js-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+    <!--js para catálogo-->
+    <script src="../js/opcionesDiseno.js"></script>
 </body>
 </html>
