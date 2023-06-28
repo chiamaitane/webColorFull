@@ -55,31 +55,31 @@
     <main>
         <section class="sectCotizarCatalogo d-flex flex-column align-items-center">
                 
-            <div class="divCotizarCatalogo1 shadow bg-body rounded">
+            <div class="divCotizarCatalogo1 shadow bg-body rounded col-sm-12">
                 <div class="d-flex flex-row align-items-center">
-                    <div class="imgCotizarCatalogo d-flex justify-self-center col-sm-12 col-lg-6"><img
-                            src="../recursos/cotizar-catalogo.jpg" alt="Tintas CMYK">
+                    <div class="imgCotizarCatalogo d-flex justify-self-center col-lg-6"><img
+                            src="../recursos/cotizar-catalogo.jpg" alt="Tintas CMYK" id="imageDisplay">
                     </div>
             
-                    <div class="divContInfoCatalg d-flex flex-column align-items-center justify-content-center">
+                    <div class="divContInfoCatalg d-flex flex-column align-items-center justify-content-center col-sm-12 col-md-6">
                         <h2 class="text-center">Indícanos cómo será tu pedido</h2>
             
                         <p>Elige el material</p>
             
                         <div class="opcMaterialCatalg flex-row">
-                            <div class="form-check form-check-inline materialCatalogo" onchange="showImage()">
+                            <div class="form-check form-check-inline materialCatalogo">
                                 <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
-                                    value="option1">
+                                    value="plastico" onchange="showImage()">
                                 <label class="form-check-label" for="inlineRadio1">Plástico</label>
                             </div>
                             <div class="form-check form-check-inline materialCatalogo">
                                 <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
-                                    value="option2">
+                                    value="carton" onchange="showImage()">
                                 <label class="form-check-label" for="inlineRadio2">Cartón</label>
                             </div>
                             <div class="form-check form-check-inline materialCatalogo">
                                 <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
-                                    value="option2">
+                                    value="bolsas" onchange="showImage()">
                                 <label class="form-check-label" for="inlineRadio3">Bolsas</label>
                             </div>
                         </div>
@@ -110,29 +110,29 @@
                             <div class="itemsCatalogo container">
                                 <div class="row">
                                     <div class="col">
-                                        <div><img src="../recursos/catalogo/opción-c-1.jpg" alt=""></div>
-                                        <div><img src="../recursos/catalogo/opción-m-1.jpg" alt=""></div>
-                                        <div><img src="../recursos/catalogo/opción-t-1.jpg" alt=""></div>
+                                        <div><img src="../recursos/catalogo/opción-c-1.jpg" alt="" onclick="updateImage('../recursos/catalogo/opción-c-1.jpg')"></div>
+                                        <div><img src="../recursos/catalogo/opción-m-1.jpg" alt="" onclick="updateImage('../recursos/catalogo/opción-m-1.jpg')"></div>
+                                        <div><img src="../recursos/catalogo/opción-t-1.jpg" alt="" onclick="updateImage('../recursos/catalogo/opción-t-1.jpg')"></div>
             
                                     </div>
                                     <div class="col">
-                                        <div><img src="../recursos/catalogo/opción-c-2.jpg" alt=""></div>
-                                        <div><img src="../recursos/catalogo/opción-m-2.jpg" alt=""></div>
-                                        <div><img src="../recursos/catalogo/opción-t-2.jpg" alt=""></div>
+                                        <div><img src="../recursos/catalogo/opción-c-2.jpg" alt="" onclick="updateImage('../recursos/catalogo/opción-c-2.jpg')"></div>
+                                        <div><img src="../recursos/catalogo/opción-m-2.jpg" alt="" onclick="updateImage('../recursos/catalogo/opción-m-2.jpg')"></div>
+                                        <div><img src="../recursos/catalogo/opción-t-2.jpg" alt="" onclick="updateImage('../recursos/catalogo/opción-t-2.jpg')"></div>
                                     </div>
                                     <div class="col">
-                                        <div><img src="../recursos/catalogo/opción-c-3.jpg" alt=""></div>
-                                        <div><img src="../recursos/catalogo/opción-m-3.jpg" alt=""></div>
-                                        <div><img src="../recursos/catalogo/opción-t-3.jpg" alt=""></div>
+                                        <div><img src="../recursos/catalogo/opción-c-3.jpg" alt="" onclick="updateImage('../recursos/catalogo/opción-c-3.jpg')"></div>
+                                        <div><img src="../recursos/catalogo/opción-m-3.jpg" alt="" onclick="updateImage('../recursos/catalogo/opción-m-3.jpg')"></div>
+                                        <div><img src="../recursos/catalogo/opción-t-3.jpg" alt="" onclick="updateImage('../recursos/catalogo/opción-t-3.jpg')"></div>
                                     </div>
                                     <div class="col">
-                                        <div><img src="../recursos/catalogo/opción-m-4.jpg" alt=""></div>
-                                        <div><img src="../recursos/catalogo/opción-t-4.jpg" alt=""></div>
-                                        <div><img src="../recursos/catalogo/opción-t-5.jpg" alt=""></div>
+                                        <div><img src="../recursos/catalogo/opción-m-4.jpg" alt="" onclick="updateImage('../recursos/catalogo/opción-m-4.jpg')"></div>
+                                        <div><img src="../recursos/catalogo/opción-t-4.jpg" alt="" onclick="updateImage('../recursos/catalogo/opción-t-4.jpg')"></div>
+                                        <div><img src="../recursos/catalogo/opción-t-5.jpg" alt="" onclick="updateImage('../recursos/catalogo/opción-t-5.jpg')"></div>
                                     </div>
                                     <div class="col">
-                                        <div><img src="../recursos/catalogo/opción-m-5.jpg" alt=""></div>
-                                        <div><img src="../recursos/catalogo/opción-t-6.jpg" alt=""></div>
+                                        <div><img src="../recursos/catalogo/opción-m-5.jpg" alt="" onclick="updateImage('../recursos/catalogo/opción-m-5.jpg')"></div>
+                                        <div><img src="../recursos/catalogo/opción-t-6.jpg" alt="" onclick="updateImage('../recursos/catalogo/opción-t-6.jpg')"></div>
                                     </div>
                                 </div>
                             </div>
@@ -141,10 +141,10 @@
                 </div>
             </div>
 
-            <div class="datosCotizar d-flex flex-column align-items-center justify-content-center shadow bg-body rounded">
+            <div class="datosCotizar d-flex flex-column align-items-center justify-content-center shadow bg-body rounded col-sm-6">
                 <p>Tus datos</p>
-                <form class="d-flex flex-row">
-                    <div class="formPadding flex-column">
+                <form class="d-flex flex-lg-row flex-column-reverse flex-md-row align-items-center">
+                    <div class="formPadding flex-lg-column">
                         <div class="formulario mb-3">
                             <label for="inputNombre" class="form-label">Nombre y Apellido</label>
                             <input type="text" class="form-control" id="exampleInputEmail1">
@@ -157,7 +157,7 @@
                         </div>
                         <a href="#"><button class="botonEnviar">Enviar</button></a>
                     </div>
-                    <div class="formulario flex-column">
+                    <div class="formulario flex-lg-column">
                         <div class="mb-3">
                             <label for="inputCel" class="form-label">Celular</label>
                             <input type="tel" class="form-control" id="exampleInputEmail1">

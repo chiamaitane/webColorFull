@@ -46,7 +46,7 @@
                         }
 
                         .dropdown-item:active{
-                            background-color: #E5007E;
+                            background-color: $colorMagenta;
                             color: #fff;
                         }
                     }
@@ -60,7 +60,7 @@
             }
 
             li a:hover{
-                color: #E5007E;
+                color: $colorMagenta;
             }
         }
     }
@@ -80,7 +80,7 @@
 
 /*información footer*/
 .footerContainer{
-    background-color: #009EE2;
+    background-color: $colorCyan;
     display: grid;
     grid-template-columns: repeat(2, 30%) 20%;
     grid-template-rows: repeat(2, 90px);

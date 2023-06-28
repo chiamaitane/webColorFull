@@ -175,13 +175,14 @@ html a {
   font-size: 1.6rem;
   margin: 4px;
   border-radius: 10px;
+  position: relative;
+  z-index: 2;
   cursor: pointer;
   text-align: center;
   text-transform: uppercase;
   font-weight: 500;
   display: block;
   margin-top: 10px;
-  z-index: auto;
 }
 .bannerCarrusel .bannerIndex .carousel-caption .botonCotizar:hover {
   background-color: transparent;
@@ -238,13 +239,14 @@ html a {
   background-color: #009EE2;
   border: 2px solid transparent;
   color: #fff;
-  padding: 15px 32px;
-  font-size: 1.6rem;
+  padding: 10px 25px;
+  font-size: 1.4rem;
   border-radius: 10px;
   cursor: pointer;
   text-align: center;
   text-transform: uppercase;
   font-weight: 500;
+  margin-top: 20px;
 }
 .sectionConocenos .divConocenos .botonCotizar2:hover {
   background-color: transparent;
@@ -347,10 +349,13 @@ html a {
   --bs-btn-active-color: #fff;
   --bs-btn-active-bg: #E5007E;
   --bs-btn-active-border-color: #E5007E;
+  padding-top: 10px;
+  padding-left: 10px;
 }
 .sectServicios .textVasosP .btn-primary .iconoVerMas {
   width: 16px;
   color: #fff;
+  padding-bottom: 3px;
 }
 .sectServicios .textVasosP .botonVer {
   font-size: 1.2rem;
@@ -393,10 +398,13 @@ html a {
   --bs-btn-active-color: #fff;
   --bs-btn-active-bg: #E5007E;
   --bs-btn-active-border-color: #E5007E;
+  padding-top: 10px;
+  padding-left: 10px;
 }
 .sectServicios .textEnvasesP .btn-primary .iconoVerMas {
   width: 16px;
   color: #fff;
+  padding-bottom: 3px;
 }
 .sectServicios .textEnvasesP .botonVer {
   font-size: 1.2rem;
@@ -439,10 +447,13 @@ html a {
   --bs-btn-active-color: #fff;
   --bs-btn-active-bg: #E5007E;
   --bs-btn-active-border-color: #E5007E;
+  padding-top: 10px;
+  padding-left: 10px;
 }
 .sectServicios .textVasosC .btn-primary .iconoVerMas {
   width: 16px;
   color: #fff;
+  padding-bottom: 3px;
 }
 .sectServicios .textVasosC .botonVer {
   font-size: 1.2rem;
@@ -485,10 +496,13 @@ html a {
   --bs-btn-active-color: #fff;
   --bs-btn-active-bg: #E5007E;
   --bs-btn-active-border-color: #E5007E;
+  padding-top: 10px;
+  padding-left: 10px;
 }
 .sectServicios .textBolsas .btn-primary .iconoVerMas {
   width: 16px;
   color: #fff;
+  padding-bottom: 3px;
 }
 .sectServicios .textBolsas .botonVer {
   font-size: 1.2rem;
@@ -684,6 +698,10 @@ html a {
 .sectCotizarCatalogo .datosCotizar form .formulario {
   width: 400px;
 }
+.sectCotizarCatalogo .datosCotizar form .formulario .form-control:focus {
+  border-color: #ffbde1;
+  box-shadow: 0 0 0 0.25rem rgba(255, 189, 255, 0.25);
+}
 .sectCotizarCatalogo .datosCotizar form .formulario .form-text {
   font-size: 1.2rem;
 }
@@ -831,6 +849,10 @@ html a {
 }
 .sectCotizarPersonalizado .datosCotizar form .formulario {
   width: 400px;
+}
+.sectCotizarPersonalizado .datosCotizar form .formulario .form-control:focus {
+  border-color: #ffbde1;
+  box-shadow: 0 0 0 0.25rem rgba(255, 189, 255, 0.25);
 }
 .sectCotizarPersonalizado .datosCotizar form .formulario .form-text {
   font-size: 1.2rem;
@@ -1028,6 +1050,70 @@ html a {
   .sectServicios .textBolsas h2 {
     font-size: 2rem !important;
   }
+  /*cotizar catálogo*/
+  .sectCotizarCatalogo {
+    height: 1150px;
+  }
+  .sectCotizarCatalogo .divCotizarCatalogo1 {
+    width: 400px;
+    height: 600px;
+  }
+  .sectCotizarCatalogo .divCotizarCatalogo1 .imgCotizarCatalogo img {
+    display: none;
+  }
+  .sectCotizarCatalogo .divCotizarCatalogo1 .divContInfoCatalg h2 {
+    margin-top: 90px;
+  }
+  .sectCotizarCatalogo .datosCotizar {
+    width: 400px;
+    height: 500px;
+  }
+  .sectCotizarCatalogo .datosCotizar form .formulario {
+    width: 350px;
+  }
+  .sectCotizarPersonalizado {
+    grid-template-columns: 5% 5% 80% 5% 5%;
+    grid-template-rows: 50px 400px 30px 380px 30px 480px 30px;
+    margin-top: 120px;
+  }
+  .sectCotizarPersonalizado .bannerCotizarPersonalizado {
+    grid-column: 1/span 6;
+    grid-row: 1/span 8;
+  }
+  .sectCotizarPersonalizado .fondoDescripcion {
+    grid-column: 2/span 3;
+    grid-row: 2/3;
+  }
+  .sectCotizarPersonalizado .divDescripcion {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    margin-left: 0;
+    width: 100%;
+  }
+  .sectCotizarPersonalizado .formularioPersonalizado {
+    grid-column: 2/span 3;
+    grid-row: 4/5;
+  }
+  .sectCotizarPersonalizado .datosCotizar {
+    grid-column: 2/span 3;
+    grid-row: 6/7;
+    padding-left: 15px;
+  }
+  .sectCotizarPersonalizado .datosCotizar .formulario {
+    width: 200px;
+  }
+  /*contacto*/
+  .divBannerConoc {
+    background-size: cover;
+    height: 550px;
+  }
+  .divBannerConoc .divDatosConoc {
+    margin-left: 30px;
+    width: 400px;
+  }
+  .divBannerConoc iframe {
+    width: 100%;
+  }
 }
 @media only screen and (min-width: 479px) and (max-width: 767px) {
   /*Banner index*/
@@ -1154,6 +1240,71 @@ html a {
   .sectServicios .textBolsas h2 {
     font-size: 2rem !important;
   }
+  /*cotizar catálogo*/
+  .sectCotizarCatalogo {
+    height: 1150px;
+  }
+  .sectCotizarCatalogo .divCotizarCatalogo1 {
+    width: 500px;
+    height: 600px;
+  }
+  .sectCotizarCatalogo .divCotizarCatalogo1 .imgCotizarCatalogo img {
+    display: none;
+  }
+  .sectCotizarCatalogo .divCotizarCatalogo1 .divContInfoCatalg h2 {
+    margin-top: 90px;
+  }
+  .sectCotizarCatalogo .datosCotizar {
+    width: 500px;
+    height: 500px;
+  }
+  .sectCotizarCatalogo .datosCotizar form .formulario {
+    width: 350px;
+  }
+  /*cotizar personalizado*/
+  .sectCotizarPersonalizado {
+    grid-template-columns: 5% 5% 80% 5% 5%;
+    grid-template-rows: 50px 400px 30px 380px 30px 480px 30px;
+    margin-top: 120px;
+  }
+  .sectCotizarPersonalizado .bannerCotizarPersonalizado {
+    grid-column: 1/span 6;
+    grid-row: 1/span 8;
+  }
+  .sectCotizarPersonalizado .fondoDescripcion {
+    grid-column: 2/span 3;
+    grid-row: 2/3;
+  }
+  .sectCotizarPersonalizado .divDescripcion {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    margin-left: 0;
+    width: 100%;
+  }
+  .sectCotizarPersonalizado .formularioPersonalizado {
+    grid-column: 2/span 3;
+    grid-row: 4/5;
+  }
+  .sectCotizarPersonalizado .datosCotizar {
+    grid-column: 2/span 3;
+    grid-row: 6/7;
+    padding-left: 15px;
+  }
+  .sectCotizarPersonalizado .datosCotizar .formulario {
+    width: 200px;
+  }
+  /*contacto*/
+  .divBannerConoc {
+    background-size: cover;
+    height: 600px;
+  }
+  .divBannerConoc .divDatosConoc {
+    margin-left: 30px;
+    width: 450px;
+  }
+  .divBannerConoc iframe {
+    width: 100%;
+  }
 }
 @media only screen and (min-width: 767px) and (max-width: 992px) {
   .bannerCarrusel .bannerIndex {
@@ -1213,6 +1364,86 @@ html a {
     margin-left: 25px;
     padding-bottom: 65px;
   }
+  /*cotizar catálogo*/
+  .sectCotizarCatalogo {
+    height: 950px;
+  }
+  .sectCotizarCatalogo .divCotizarCatalogo1 {
+    width: 720px;
+    height: 600px;
+  }
+  .sectCotizarCatalogo .divCotizarCatalogo1 .divContInfoCatalg {
+    width: 420px;
+  }
+  .sectCotizarCatalogo .divCotizarCatalogo1 .divContInfoCatalg h2 {
+    margin-top: 90px;
+  }
+  .sectCotizarCatalogo .divCotizarCatalogo1 .imgCotizarCatalogo img {
+    width: 300px;
+    padding-top: 20px;
+  }
+  .sectCotizarCatalogo .datosCotizar {
+    width: 720px;
+    height: 300px;
+  }
+  .sectCotizarCatalogo .datosCotizar form .formulario {
+    width: 300px;
+  }
+  /*cotizar personalizado*/
+  .sectCotizarPersonalizado {
+    grid-template-columns: 5% repeat(2, 45%) 5%;
+    grid-template-rows: 50px 470px 30px 300px 50px;
+    margin-top: 120px;
+  }
+  .sectCotizarPersonalizado .bannerCotizarPersonalizado {
+    grid-column: 1/span 4;
+    grid-row: 1/span 5;
+  }
+  .sectCotizarPersonalizado .fondoDescripcion {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  .sectCotizarPersonalizado .divDescripcion {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin-left: 10%;
+    width: 80%;
+  }
+  .sectCotizarPersonalizado .formularioPersonalizado {
+    grid-column: 3/4;
+    grid-row: 2/3;
+  }
+  .sectCotizarPersonalizado .formularioPersonalizado .tamanoPersonal {
+    width: 80%;
+  }
+  .sectCotizarPersonalizado .formularioPersonalizado .cantidad {
+    width: 100%;
+  }
+  .sectCotizarPersonalizado .formularioPersonalizado .form-range {
+    width: 80%;
+  }
+  .sectCotizarPersonalizado .datosCotizar {
+    grid-column: 2/4;
+    grid-row: 4/5;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .sectCotizarPersonalizado .datosCotizar .formulario {
+    width: 250px;
+  }
+  /*contacto*/
+  .divBannerConoc {
+    background-size: cover;
+    height: 800px;
+  }
+  .divBannerConoc .divDatosConoc {
+    margin-left: 30px;
+    width: 600px;
+  }
+  .divBannerConoc iframe {
+    width: 100%;
+  }
 }
 @media only screen and (min-width: 993px) {
   /*Footer*/
@@ -1227,6 +1458,18 @@ html a {
   }
   .bannerCarrusel .bannerIndex .carousel-caption {
     width: 800px;
+  }
+  /*contacto*/
+  .divBannerConoc {
+    background-size: cover;
+    height: 800px;
+  }
+  .divBannerConoc .divDatosConoc {
+    margin-left: 30px;
+    width: 600px;
+  }
+  .divBannerConoc iframe {
+    width: 100%;
   }
 }
 

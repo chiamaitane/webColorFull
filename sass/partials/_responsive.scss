@@ -182,6 +182,92 @@
             }
         }
     }
+
+    /*cotizar catálogo*/
+    .sectCotizarCatalogo{
+        height: 1150px;
+
+        .divCotizarCatalogo1{
+            width: 400px;
+            height: 600px;
+
+            .imgCotizarCatalogo{
+                img{
+                    display: none;
+                }
+            }
+
+            .divContInfoCatalg{
+                h2{
+                    margin-top: 90px;
+                }
+            }
+        } 
+
+        .datosCotizar{
+            width: 400px;
+            height: 500px;
+
+            form{
+                .formulario{
+                    width: 350px;
+                }
+            }
+        } 
+    }
+
+    .sectCotizarPersonalizado{
+        grid-template-columns: 5% 5% 80% 5% 5%;
+        grid-template-rows: 50px 400px 30px 380px 30px 480px 30px;
+        margin-top: 120px;
+
+        .bannerCotizarPersonalizado{
+            grid-column: 1/span 6;
+            grid-row: 1/span 8;
+        }
+
+        .fondoDescripcion {
+            grid-column: 2/span 3;
+            grid-row: 2/3;
+        }
+
+        .divDescripcion {
+            grid-column: 3/4;
+            grid-row: 2/3;
+            margin-left: 0;
+            width: 100%;
+        }
+
+        .formularioPersonalizado {
+            grid-column: 2/span 3;
+            grid-row: 4/5;
+        }
+
+        .datosCotizar {
+            grid-column: 2/span 3;
+            grid-row: 6/7;
+            padding-left: 15px;
+
+            .formulario {
+                width: 200px;
+            }
+        }
+    }
+
+    /*contacto*/
+    .divBannerConoc{
+        background-size: cover;
+        height: 550px;
+
+        .divDatosConoc{
+            margin-left: 30px;
+            width: 400px;
+        }
+
+        iframe{
+            width: 100%;
+        }
+    }
 }
 
 @media only screen and (min-width: 479px) and (max-width: 767px) {
@@ -341,6 +427,93 @@
             }
         }
     }
+
+    /*cotizar catálogo*/
+    .sectCotizarCatalogo{
+        height: 1150px;
+
+        .divCotizarCatalogo1{
+            width: 500px;
+            height: 600px;
+
+            .imgCotizarCatalogo{
+                img{
+                    display: none;
+                }
+            }
+
+            .divContInfoCatalg{
+                h2{
+                    margin-top: 90px;
+                }
+            }
+        } 
+
+        .datosCotizar{
+            width: 500px;
+            height: 500px;
+
+            form{
+                .formulario{
+                    width: 350px;
+                }
+            }
+        } 
+    }
+
+    /*cotizar personalizado*/
+    .sectCotizarPersonalizado{
+        grid-template-columns: 5% 5% 80% 5% 5%;
+        grid-template-rows: 50px 400px 30px 380px 30px 480px 30px;
+        margin-top: 120px;
+
+        .bannerCotizarPersonalizado{
+            grid-column: 1/span 6;
+            grid-row: 1/span 8;
+        }
+
+        .fondoDescripcion {
+            grid-column: 2/span 3;
+            grid-row: 2/3;
+        }
+
+        .divDescripcion {
+            grid-column: 3/4;
+            grid-row: 2/3;
+            margin-left: 0;
+            width: 100%;
+        }
+
+        .formularioPersonalizado {
+            grid-column: 2/span 3;
+            grid-row: 4/5;
+        }
+
+        .datosCotizar {
+            grid-column: 2/span 3;
+            grid-row: 6/7;
+            padding-left: 15px;
+
+            .formulario {
+                width: 200px;
+            }
+        }
+    }
+
+    /*contacto*/
+    .divBannerConoc{
+        background-size: cover;
+        height: 600px;
+
+        .divDatosConoc{
+            margin-left: 30px;
+            width: 450px;
+        }
+
+        iframe{
+            width: 100%;
+        }
+    }
 }
 
 @media only screen and (min-width: 767px) and (max-width: 992px){
@@ -416,6 +589,110 @@
             padding-bottom: 65px;
         }
     }
+
+    /*cotizar catálogo*/
+    .sectCotizarCatalogo{
+        height: 950px;
+
+        .divCotizarCatalogo1{
+            width: 720px;
+            height: 600px;
+
+            .divContInfoCatalg{
+                width: 420px;
+
+                h2{
+                    margin-top: 90px;
+                }
+            }
+
+        .imgCotizarCatalogo{
+            img{
+                width: 300px;
+                padding-top: 20px;
+            }
+        }
+        } 
+
+        .datosCotizar{
+            width: 720px;
+            height: 300px;
+
+            form{
+                .formulario{
+                    width: 300px;
+                }
+            }
+        } 
+    }
+
+    /*cotizar personalizado*/
+    .sectCotizarPersonalizado{
+        grid-template-columns: 5% repeat(2, 45%) 5%;
+        grid-template-rows: 50px 470px 30px 300px 50px;
+        margin-top: 120px;
+
+        .bannerCotizarPersonalizado{
+            grid-column: 1/span 4;
+            grid-row: 1/span 5;
+        }
+
+        .fondoDescripcion {
+            grid-column: 2/3;
+            grid-row: 2/3;
+        }
+
+        .divDescripcion {
+            grid-column: 2/3;
+            grid-row: 2/3;
+            margin-left: 10%;
+            width: 80%;
+        }
+
+        .formularioPersonalizado {
+            grid-column: 3/4;
+            grid-row: 2/3;
+
+            .tamanoPersonal{
+                width: 80%;
+            }
+
+            .cantidad{
+                width: 100%;
+            }
+
+            .form-range{
+                width: 80%;
+            }
+        }
+
+        .datosCotizar {
+            grid-column: 2/4;
+            grid-row: 4/5;
+            width: 100%;
+            padding-left: 10px;
+            padding-right: 10px;
+
+            .formulario {
+                width: 250px;
+            }
+        }
+    }
+
+    /*contacto*/
+    .divBannerConoc{
+        background-size: cover;
+        height: 800px;
+
+        .divDatosConoc{
+            margin-left: 30px;
+            width: 600px;
+        }
+
+        iframe{
+            width: 100%;
+        }
+    }
 }
 
 @media only screen and (min-width: 993px){
@@ -435,6 +712,21 @@
             .carousel-caption{
                 width: 800px;
             }
+        }
+    }
+
+    /*contacto*/
+    .divBannerConoc{
+        background-size: cover;
+        height: 800px;
+
+        .divDatosConoc{
+            margin-left: 30px;
+            width: 600px;
+        }
+
+        iframe{
+            width: 100%;
         }
     }
 }

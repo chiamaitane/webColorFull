@@ -42,21 +42,22 @@
                 text-shadow: 2px 1px 5px rgb(58, 58, 58);
             }
 
-            .botonCotizar {
-                background-color: #009EE2;
+            .botonCotizar{
+                background-color: $colorCyan;
                 border: 2px solid transparent;
                 color: #fff;
                 padding: 15px 32px;
                 font-size: 1.6rem;
                 margin: 4px;
                 border-radius: 10px;
+                position: relative;
+                z-index: 2;
                 cursor: pointer;
                 text-align: center;
                 text-transform: uppercase;
                 font-weight: 500;
                 display: block;
                 margin-top: 10px;
-                z-index: auto;
             }
 
             .botonCotizar:hover {
@@ -127,22 +128,13 @@
         }
     
         .botonCotizar2{
-            background-color: #009EE2;
-            border: 2px solid transparent;
-            color: #fff;
-            padding: 15px 32px;
-            font-size: 1.6rem;
-            border-radius: 10px;
-            cursor: pointer;
-            text-align: center;
-            text-transform: uppercase;
-            font-weight: 500;
+            @include botonCyan;
         }
         
         .botonCotizar2:hover{
             background-color: transparent;
-            border: 2px solid #E5007E;
-            color: #E5007E;
+            border: 2px solid $colorMagenta;
+            color: $colorMagenta;
         }
     }
 

@@ -1,27 +1,28 @@
-function mostrarImg() {
-    var select = document.getElementById("opcMaterialCatalg");
-    var imgCotizarCatalogo = document.getElementById("imgCotizarCatalogo");
-  
-    // Obtener el valor seleccionado del menú desplegable
-    var selectedValue = select.value;
-  
-    // Mostrar la imagen correspondiente según la opción seleccionada
-    if (selectedValue === "1") {
-        imgCotizarCatalogo.src = "../recursos/catalogo/-plastico.jpg";
-    } else if (selectedValue === "2") {
-        imgCotizarCatalogo.src = "../recursos/catalogo/vaso-carton.jpg";
-    } else if (selectedValue === "3") {
-        imgCotizarCatalogo.src = "../recursos/catalogo/bolsa-tnt.jpg";
-    } else {
-      // Si no se selecciona ninguna opción o se selecciona "Seleccionar..."
-      imgCotizarCatalogo.src = "../recursos/cotizar-catalogo.jpg";
+function showImage() {
+    var radios = document.getElementsByName("inlineRadioOptions");
+    var imageDisplay = document.getElementById("imageDisplay");
+
+    // Recorrer los radios y encontrar el seleccionado
+    for (var i = 0; i < radios.length; i++) {
+      if (radios[i].checked) {
+        var selectedValue = radios[i].value;
+
+        // Mostrar la imagen correspondiente según la opción seleccionada
+        if (selectedValue === "plastico") {
+          imageDisplay.src = "../recursos/catalogo/vaso-plastico.jpg";
+        } else if (selectedValue === "carton") {
+          imageDisplay.src = "../recursos/catalogo/vaso-carton.jpg";
+        } else if (selectedValue === "bolsas") {
+          imageDisplay.src = "../recursos/catalogo/bolsa-tnt.jpg";
+        }
+
+        break; // Salir del bucle una vez encontrado el seleccionado
+      }
     }
-  
-    // Mostrar la imagen si se selecciona una opción válida, ocultarla de lo contrario
-    if (selectedValue !== "Seleccionar...") {
-        imgCotizarCatalogo.style.display = "block";
-    } else {
-        imgCotizarCatalogo.style.display = "none";
-    }
+  }
+
+  function updateImage(imageSrc) {
+    var imageDisplay = document.getElementById("imageDisplay");
+    imageDisplay.src = imageSrc;
   }
   
