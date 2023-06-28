@@ -1,40 +1,185 @@
 /*cotizar personalizado*/
-.sectCotizarPersonalizado{
+.sectCotizarPersonalizado {
     display: grid;
     grid-template-columns: 15% repeat(2, 35%) 15%;
-    grid-template-rows: 150px 500px 150px 50px;
+    grid-template-rows: 50px 400px 30px 300px 50px;
+    margin-top: 120px;
 
-    .bannerCotizarPersonalizado{
+    .bannerCotizarPersonalizado {
         grid-column: 1/span 4;
         grid-row: 1/span 5;
         background-image: url(../recursos/banner-cotizar-personalizado.jpg);
         background-size: cover;
     }
 
-    .fondoDescripcion{
+    .fondoDescripcion {
         grid-column: 2/4;
         grid-row: 2/3;
         background-color: #fff;
-        opacity: 50%;
+        opacity: 80%;
     }
 
-    .divDescripcion{
+    .divDescripcion {
         grid-column: 2/4;
         grid-row: 2/3;
         width: 40%;
         z-index: 1;
-    }
-    
-    .formularioPersonalizado{
-        grid-column: 3/4;
-        grid-row: 2/span 2;
-        background-color: #009EE2;
-        z-index: 1;
-        color: #fff;
+        margin-left: 50px;
 
-        h2{
-            font-size: 3rem;
+        h2 {
+            margin-top: 20px;
             text-transform: uppercase;
+            font-size: 2rem;
+        }
+
+        p {
+            font-size: 1.6rem;
+            font-weight: 500;
+            margin-top: 5px;
+            text-align: justify;
+            white-space: pre-line;
+        }
+    }
+
+    .formularioPersonalizado {
+        grid-column: 3/4;
+        grid-row: 2/3;
+        z-index: 1;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        font-weight: 500;
+
+        .opcMaterialPersonal {
+            .form-check {
+                margin-bottom: 20px;
+
+                .form-check-input:checked {
+                    background-color: #E5007E;
+                    border-color: #E5007E;
+                    box-shadow: none;
+                }
+
+                .form-check-input:active {
+                    background-color: #ffbde1;
+                    border-color: #ffbde1;
+                    box-shadow: none;
+                }
+            }
+        }
+
+        .tamanoPersonal{
+            .form-select{
+                text-transform: uppercase;
+                font-size: 1.5rem;
+            }
+
+            .form-select:focus {
+                border-color: #ffbde1;
+                box-shadow: 0 0 0 0.25rem rgba(255,189,255,.25);
+            }
+
+            .form-select-value:hover {
+                background-color: #E5007E;
+            }
+
+            .selectorTamano{
+                option:hover{
+                    background-color: #E5007E;
+                }
+            }
+        }
+
+        .input-group {
+            font-size: 1.5rem;
+            width: 350px;
+
+            .form-select {
+                text-transform: uppercase;
+            }
+        }
+
+        .cantidad {
+            width: 350px;
+            text-align: center;
+            margin-top: 20px;
+
+            .form-control{
+                font-size: 1.5rem;
+            }
+            
+            .form-control:focus {
+                border-color: #ffbde1;
+                box-shadow: 0 0 0 0.25rem rgba(255,189,255,.25);
+            }
+
+            .form-control-value:hover {
+                background-color: #E5007E;
+            }
+
+            .form-text {
+                text-transform: initial;
+                padding-bottom: 20px;
+            }
+        }
+
+        .form-range {
+            width: 350px;
+        }
+    }
+
+    .datosCotizar {
+        grid-column: 2/4;
+        grid-row: 4/5;
+
+        p {
+            text-transform: uppercase;
+            font-size: 1.4rem;
+            font-weight: bold;
+        }
+
+        .formPadding {
+            padding-right: 20px;
+        }
+
+        form {
+            .formulario {
+                width: 400px;
+
+                .form-text {
+                    font-size: 1.2rem;
+                }
+
+                label {
+                    text-transform: uppercase;
+                    font-size: 1.1rem;
+                    font-weight: 500;
+                }
+
+                textarea {
+                    resize: none;
+                    height: 120px;
+                }
+            }
+
+            .botonEnviar {
+                background-color: #009EE2;
+                border: 2px solid transparent;
+                color: #fff;
+                padding: 10px 25px;
+                font-size: 1.4rem;
+                border-radius: 10px;
+                cursor: pointer;
+                text-align: center;
+                text-transform: uppercase;
+                font-weight: 500;
+                margin-top: 20px;
+            }
+
+            .botonEnviar:hover {
+                background-color: transparent;
+                border: 2px solid #E5007E;
+                color: #E5007E;
+            }
         }
     }
 }

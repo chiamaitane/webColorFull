@@ -58,55 +58,93 @@
         <section class="sectCotizarPersonalizado">
             <div class="bannerCotizarPersonalizado"></div>
             <div class="fondoDescripcion"></div>
-            <div class="divDescripcion">
+            <div class="divDescripcion d-flex flex-column justify-content-center align-items-center">
                 <h2>Cuéntanos más acerca de tu proyecto</h2>
-                <p>Bienvenido/a a nuestra sección de cotización, donde puedes personalizar y obtener información precisa sobre tu pedido. Aquí, te brindamos la oportunidad de elegir las características que mejor se adapten a tus necesidades. Selecciona las características principales de tu pedido. Elige entre opciones como tamaño, color y material. Además, si tienes requisitos especiales o necesitas agregar alguna información adicional, puedes hacerlo en el campo de comentarios. No olvides añadir tus datos para recibir tu cotización.</p>
+                <p>Bienvenido/a a nuestra sección de cotización, donde puedes personalizar y obtener información precisa sobre tu pedido.<br>
+                Selecciona las características principales de tu pedido. Elige entre opciones como tamaño, color y material. Además, si tienes requisitos especiales o necesitas agregar alguna información adicional, puedes hacerlo en el campo de comentarios.<br>
+                No olvides añadir tus datos para recibir tu cotización.</p>
             </div>
-            <form action="" class="formularioPersonalizado">
-                <h2>Tu pedido</h2>
-                <p>Elige el material</p>
-                <div class="materialPersonalizado">
-                  <input type="radio" name="opciones" id="plastico" value="plastico">
-                  <label for="plastico">Plástico</label>
-
-                  <input type="radio" name="opciones" id="carton" value="carton">
-                  <label for="carton">Cartón</label>
-
-                  <input type="radio" name="opciones" id="bolsas" value="bolsas">
-                  <label for="bolsas">Bolsas TNT</label>
+            <div class="formularioPersonalizado d-flex flex-column align-items-center justify-content-center shadow bg-body rounded">
+                <p class="formulario">Elige el material</p>
+    
+                <div class="opcMaterialPersonal flex-row">
+                    <div class="form-check form-check-inline materialPersonal">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                            value="option1">
+                        <label class="form-check-label" for="inlineRadio1">Plástico</label>
+                    </div>
+                    <div class="form-check form-check-inline materialPersonal">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                            value="option2">
+                        <label class="form-check-label" for="inlineRadio2">Cartón</label>
+                    </div>
+                    <div class="form-check form-check-inline materialPersonal">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                            value="option2">
+                        <label class="form-check-label" for="inlineRadio3">Bolsas</label>
+                    </div>
                 </div>
+    
+                <p>¿Cuál es el tamaño?</p>
+                <div class="input-group tamanoPersonal">
+                    <select class="form-select selectorTamano" id="inputGroupSelect04"
+                        aria-label="Example select with button addon">
+                        <option selected>Seleccionar...</option>
+                        <option value="1">330cc</option>
+                        <option value="2">380cc</option>
+                        <option value="3">500cc</option>
+                    </select>
+                </div>
+    
+                <form>
+                    <div class="cantidad">
+                        <label for="cantidadPersonal" class="form-label">
+                            <p>¿Qué cantidad?</p>
+                        </label>
+                        <input type="number" class="form-control" id="cantidadPersonal" aria-describedby="emailHelp" min="50" step="10">
+                        <div id="emailHelp" class="form-text">Deben ser mínimo 50 unidades</div>
+                    </div>
+                </form>
 
-                <p>Ingresa el tamaño</p>
-                <input type="text" id="tamañoPersonalizado" class="tamañoPersonalizado" placeholder="Medida en centímetros" required>
-                <label for="tamañoPersonalizado">cm</label>
-
-                <p>¿Qué cantidad?</p>
-                <input type="number" id="cantidadPersonalizado" class="cantidadPersonalizado" placeholder="100" required
-                min="2" max="8" step="10">
-                <label for="cantidadPersonalizado">Unidades</label>
-
-                <p>¿Cuántos colores?</p>
-                <input type="range" name="coloresPersonalizado" id="coloresPersonalizado" step="1" min="1" max="3" list="cantidadColoresP">
+                <label for="customRange3" class="form-label">¿Cuántos colores?</label>
+                <input class="form-range" type="range" name="coloresPersonalizado" id="coloresPersonalizado" step="1" min="1" max="3"
+                    list="cantidadColoresP">
                 <datalist type="range" id="cantidadColoresP">
                     <option value="1" label="1">
                     <option value="2" label="2">
                     <option value="3" label="3">
                 </datalist>
+            </div>
 
-                <p>Tus datos de contacto</p>
-                <input type="text" name="nombre" id="nombre" class="nombre" placeholder="María Pérez" required>
-                <label for="nombre">Nombre y Apellido</label>
-
-                <input type="email" name="email" id="email" class="email" placeholder="ejemplo@mail.com" required>
-                <label for="email">Correo electrónico</label>
-
-                <input type="text" name="celular" id="celular" class="celular" placeholder="56900000000" minlength="11" maxlength="11" required size="14"> 
-                <label for="celular">Celular</label>
-
-                <textarea name="comentario" id="comentario" cols="30" rows="10" maxlength="200" placeholder="Escribe algunas especificaciones necesarias"></textarea>
-
-                <button class="enviarFormulario">Enviar</button>
-            </form>
+            <section class="datosCotizar d-flex flex-column align-items-center justify-content-center shadow bg-body rounded">
+                <p>Tus datos</p>
+                <form class="d-flex flex-row">
+                    <div class="formPadding flex-column">
+                        <div class="formulario mb-3">
+                            <label for="inputNombre" class="form-label">Nombre y Apellido</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1">
+                        </div>
+                    
+                        <div class="formulario mb-3">
+                            <label for="inputEmail" class="form-label">Correo Electrónico</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">ejemplo@mail.com</div>
+                        </div>
+                        <a href="#"><button class="botonEnviar">Enviar</button></a>
+                    </div>
+                    <div class="formulario flex-column">
+                        <div class="mb-3">
+                            <label for="inputCel" class="form-label">Celular</label>
+                            <input type="tel" class="form-control" id="exampleInputEmail1">
+                            <div id="emailHelp" class="form-text">+56 9 9999 9999</div>
+                        </div>
+                        <div >
+                            <textarea class="form-control" aria-label="With textarea" placeholder="Aquí puedes agregar un comentario"></textarea>
+                        </div>
+                    </div>
+                  </form>
+            </section>
+            
         </section>
     </main>
     <footer>

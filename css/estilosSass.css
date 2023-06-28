@@ -510,6 +510,90 @@ html a {
   color: #fff;
 }
 
+/*cotizar*/
+.sectCotizar {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-template-rows: 320px 280px 20px;
+  justify-content: center;
+  row-gap: 20px;
+  margin-top: 120px;
+}
+.sectCotizar .imgCotizar1 {
+  grid-column: 1/span 3;
+  grid-row: 1/2;
+  background-image: url(../recursos/banner-cotizar.jpg);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.sectCotizar .cotizarCatalogo {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  width: 80%;
+  align-self: start;
+  justify-self: center;
+}
+.sectCotizar .cotizarCatalogo h2 {
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.sectCotizar .cotizarCatalogo p {
+  font-size: 1.7rem;
+}
+.sectCotizar .cotizarCatalogo .botonCotizar2 {
+  background-color: #009EE2;
+  border: 2px solid transparent;
+  color: #fff;
+  padding: 10px 25px;
+  font-size: 1.4rem;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-top: 20px;
+}
+.sectCotizar .cotizarCatalogo .botonCotizar2:hover {
+  background-color: transparent;
+  border: 2px solid #E5007E;
+  color: #E5007E;
+}
+.sectCotizar .cotizarPersonalizado {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  width: 80%;
+  align-self: start;
+  justify-self: center;
+}
+.sectCotizar .cotizarPersonalizado h2 {
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.sectCotizar .cotizarPersonalizado p {
+  font-size: 1.7rem;
+}
+.sectCotizar .cotizarPersonalizado .botonCotizar2 {
+  background-color: #009EE2;
+  border: 2px solid transparent;
+  color: #fff;
+  padding: 10px 25px;
+  font-size: 1.4rem;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-top: 20px;
+}
+.sectCotizar .cotizarPersonalizado .botonCotizar2:hover {
+  background-color: transparent;
+  border: 2px solid #E5007E;
+  color: #E5007E;
+}
+
 /*cotizar catálogo*/
 .sectCotizarCatalogo {
   margin-top: 120px;
@@ -635,7 +719,8 @@ html a {
 .sectCotizarPersonalizado {
   display: grid;
   grid-template-columns: 15% repeat(2, 35%) 15%;
-  grid-template-rows: 150px 500px 150px 50px;
+  grid-template-rows: 50px 400px 30px 300px 50px;
+  margin-top: 120px;
 }
 .sectCotizarPersonalizado .bannerCotizarPersonalizado {
   grid-column: 1/span 4;
@@ -647,24 +732,135 @@ html a {
   grid-column: 2/4;
   grid-row: 2/3;
   background-color: #fff;
-  opacity: 50%;
+  opacity: 80%;
 }
 .sectCotizarPersonalizado .divDescripcion {
   grid-column: 2/4;
   grid-row: 2/3;
   width: 40%;
   z-index: 1;
+  margin-left: 50px;
+}
+.sectCotizarPersonalizado .divDescripcion h2 {
+  margin-top: 20px;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+.sectCotizarPersonalizado .divDescripcion p {
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-top: 5px;
+  text-align: justify;
+  white-space: pre-line;
 }
 .sectCotizarPersonalizado .formularioPersonalizado {
   grid-column: 3/4;
-  grid-row: 2/span 2;
-  background-color: #009EE2;
+  grid-row: 2/3;
   z-index: 1;
-  color: #fff;
-}
-.sectCotizarPersonalizado .formularioPersonalizado h2 {
-  font-size: 3rem;
   text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.sectCotizarPersonalizado .formularioPersonalizado .opcMaterialPersonal .form-check {
+  margin-bottom: 20px;
+}
+.sectCotizarPersonalizado .formularioPersonalizado .opcMaterialPersonal .form-check .form-check-input:checked {
+  background-color: #E5007E;
+  border-color: #E5007E;
+  box-shadow: none;
+}
+.sectCotizarPersonalizado .formularioPersonalizado .opcMaterialPersonal .form-check .form-check-input:active {
+  background-color: #ffbde1;
+  border-color: #ffbde1;
+  box-shadow: none;
+}
+.sectCotizarPersonalizado .formularioPersonalizado .tamanoPersonal .form-select {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+.sectCotizarPersonalizado .formularioPersonalizado .tamanoPersonal .form-select:focus {
+  border-color: #ffbde1;
+  box-shadow: 0 0 0 0.25rem rgba(255, 189, 255, 0.25);
+}
+.sectCotizarPersonalizado .formularioPersonalizado .tamanoPersonal .form-select-value:hover {
+  background-color: #E5007E;
+}
+.sectCotizarPersonalizado .formularioPersonalizado .tamanoPersonal .selectorTamano option:hover {
+  background-color: #E5007E;
+}
+.sectCotizarPersonalizado .formularioPersonalizado .input-group {
+  font-size: 1.5rem;
+  width: 350px;
+}
+.sectCotizarPersonalizado .formularioPersonalizado .input-group .form-select {
+  text-transform: uppercase;
+}
+.sectCotizarPersonalizado .formularioPersonalizado .cantidad {
+  width: 350px;
+  text-align: center;
+  margin-top: 20px;
+}
+.sectCotizarPersonalizado .formularioPersonalizado .cantidad .form-control {
+  font-size: 1.5rem;
+}
+.sectCotizarPersonalizado .formularioPersonalizado .cantidad .form-control:focus {
+  border-color: #ffbde1;
+  box-shadow: 0 0 0 0.25rem rgba(255, 189, 255, 0.25);
+}
+.sectCotizarPersonalizado .formularioPersonalizado .cantidad .form-control-value:hover {
+  background-color: #E5007E;
+}
+.sectCotizarPersonalizado .formularioPersonalizado .cantidad .form-text {
+  text-transform: initial;
+  padding-bottom: 20px;
+}
+.sectCotizarPersonalizado .formularioPersonalizado .form-range {
+  width: 350px;
+}
+.sectCotizarPersonalizado .datosCotizar {
+  grid-column: 2/4;
+  grid-row: 4/5;
+}
+.sectCotizarPersonalizado .datosCotizar p {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.sectCotizarPersonalizado .datosCotizar .formPadding {
+  padding-right: 20px;
+}
+.sectCotizarPersonalizado .datosCotizar form .formulario {
+  width: 400px;
+}
+.sectCotizarPersonalizado .datosCotizar form .formulario .form-text {
+  font-size: 1.2rem;
+}
+.sectCotizarPersonalizado .datosCotizar form .formulario label {
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.sectCotizarPersonalizado .datosCotizar form .formulario textarea {
+  resize: none;
+  height: 120px;
+}
+.sectCotizarPersonalizado .datosCotizar form .botonEnviar {
+  background-color: #009EE2;
+  border: 2px solid transparent;
+  color: #fff;
+  padding: 10px 25px;
+  font-size: 1.4rem;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-top: 20px;
+}
+.sectCotizarPersonalizado .datosCotizar form .botonEnviar:hover {
+  background-color: transparent;
+  border: 2px solid #E5007E;
+  color: #E5007E;
 }
 
 /*Contáctanos*/
