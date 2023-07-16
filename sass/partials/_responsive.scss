@@ -1,16 +1,29 @@
 /*responsive*/
 @media only screen and (max-width: 479px){
+    /*logo*/
+        .navPropio{
+            .menuContenedor{
+                img{
+                    width: 220px;
+                }
+            }
+        }
+
     /*Banner index*/
     .bannerCarrusel{
+        .carousel{
+            padding: 0;
+        }
+
         .bannerIndex{
-            margin-top: 120px;
+            margin-top: 100px;
             height: 100%;
 
             img{
                 object-fit: cover;
                 height: 400px;
             }
-    
+            
             .carousel-caption{
                 padding-top:0;
                 text-align: start;
@@ -188,7 +201,7 @@
         height: 1150px;
 
         .divCotizarCatalogo1{
-            width: 400px;
+            width: 100%;
             height: 600px;
 
             .imgCotizarCatalogo{
@@ -205,7 +218,7 @@
         } 
 
         .datosCotizar{
-            width: 400px;
+            width: 100%;
             height: 500px;
 
             form{
@@ -216,9 +229,10 @@
         } 
     }
 
+    /*cotizar personalizado*/
     .sectCotizarPersonalizado{
         grid-template-columns: 5% 5% 80% 5% 5%;
-        grid-template-rows: 50px 400px 30px 380px 30px 480px 30px;
+        grid-template-rows: 50px 450px 30px 380px 30px 480px 30px;
         margin-top: 120px;
 
         .bannerCotizarPersonalizado{
@@ -248,8 +262,10 @@
             grid-row: 6/7;
             padding-left: 15px;
 
-            .formulario {
-                width: 200px;
+            form{
+                .formulario {
+                    width: 100%;
+                }
             }
         }
     }
@@ -260,8 +276,7 @@
         height: 550px;
 
         .divDatosConoc{
-            margin-left: 30px;
-            width: 400px;
+            width: 90%;
         }
 
         iframe{

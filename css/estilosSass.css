@@ -8,8 +8,6 @@
 }
 
 html {
-  /*Con esto las tipografías del documento medirán 10px, de esta
-  forma es más fácil usar los rem. Rem se adapat mejor a los dispositivos*/
   font-size: 62.5%;
   font-family: "Lato", sans-serif;
 }
@@ -363,6 +361,11 @@ html a {
   font-weight: 700;
   color: #fff;
   padding-bottom: 0px;
+}
+.sectServicios .textVasosP h1 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: #fff;
 }
 .sectServicios .textVasosP h2 {
   font-size: 2.5rem;
@@ -906,9 +909,16 @@ html a {
 
 /*responsive*/
 @media only screen and (max-width: 479px) {
+  /*logo*/
+  .navPropio .menuContenedor img {
+    width: 220px;
+  }
   /*Banner index*/
+  .bannerCarrusel .carousel {
+    padding: 0;
+  }
   .bannerCarrusel .bannerIndex {
-    margin-top: 120px;
+    margin-top: 100px;
     height: 100%;
   }
   .bannerCarrusel .bannerIndex img {
@@ -1055,7 +1065,7 @@ html a {
     height: 1150px;
   }
   .sectCotizarCatalogo .divCotizarCatalogo1 {
-    width: 400px;
+    width: 100%;
     height: 600px;
   }
   .sectCotizarCatalogo .divCotizarCatalogo1 .imgCotizarCatalogo img {
@@ -1065,15 +1075,16 @@ html a {
     margin-top: 90px;
   }
   .sectCotizarCatalogo .datosCotizar {
-    width: 400px;
+    width: 100%;
     height: 500px;
   }
   .sectCotizarCatalogo .datosCotizar form .formulario {
     width: 350px;
   }
+  /*cotizar personalizado*/
   .sectCotizarPersonalizado {
     grid-template-columns: 5% 5% 80% 5% 5%;
-    grid-template-rows: 50px 400px 30px 380px 30px 480px 30px;
+    grid-template-rows: 50px 450px 30px 380px 30px 480px 30px;
     margin-top: 120px;
   }
   .sectCotizarPersonalizado .bannerCotizarPersonalizado {
@@ -1099,8 +1110,8 @@ html a {
     grid-row: 6/7;
     padding-left: 15px;
   }
-  .sectCotizarPersonalizado .datosCotizar .formulario {
-    width: 200px;
+  .sectCotizarPersonalizado .datosCotizar form .formulario {
+    width: 100%;
   }
   /*contacto*/
   .divBannerConoc {
@@ -1108,8 +1119,7 @@ html a {
     height: 550px;
   }
   .divBannerConoc .divDatosConoc {
-    margin-left: 30px;
-    width: 400px;
+    width: 90%;
   }
   .divBannerConoc iframe {
     width: 100%;
